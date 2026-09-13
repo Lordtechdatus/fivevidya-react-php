@@ -1,0 +1,16 @@
+.implementation-page .imp-single { grid-template-columns: 1fr; }
+.implementation-page .imp-icon { color: #f47b20; margin-bottom: 12px; }
+.implementation-page .imp-sample { margin: 0; min-width: 0; }
+.implementation-page .imp-preview { margin: 24px 0; border: 1px solid #cfe1df; border-radius: 12px; overflow: hidden; background: #f5faf9; }
+.implementation-page .imp-preview-bar { display: flex; align-items: center; gap: 10px; padding: 14px 18px; background: #075a5a; color: white; font-size: 11px; letter-spacing: .08em; }
+.implementation-page .imp-preview-bar span:last-child { margin-left: auto; }
+.implementation-page .imp-preview-list, .implementation-page .imp-code { list-style: none; padding: 20px; margin: 0; display: grid; gap: 12px; }
+.implementation-page .imp-preview-list li { display: flex; align-items: center; gap: 14px; padding: 12px; background: white; border: 1px solid #dae7e5; border-radius: 8px; }
+.implementation-page .imp-preview-list li > span { color: #00756f; font-size: 12px; font-weight: 700; }
+.implementation-page .imp-preview code { white-space: pre-wrap; overflow-wrap: anywhere; font-size: 14px; line-height: 1.7; }
+.implementation-page .imp-preview-list code { font-family: inherit; }
+.implementation-page .imp-matrix { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 4px; padding: 20px 20px 0; text-align: center; }
+.implementation-page .imp-matrix span { background: #dbece8; padding: 12px 4px; font-size: 13px; }
+.implementation-page .imp-matrix .imp-cell-strong { background: #00756f; color: white; }
+.implementation-page .imp-mesh { display: block; width: 100%; height: 200px; color: #00756f; padding: 15px; }
+@media(max-width:767px) { .implementation-page .imp-preview-list, .implementation-page .imp-code { padding: 12px; } }

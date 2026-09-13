@@ -1,44 +1,30 @@
-import React, { useMemo, useState } from 'react';
+import React, { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react';
+import { Link, Navigate, Route, Routes, useLocation } from 'react-router-dom';
+import ImplementationPage from './pages/ImplementationPage.jsx';
+import { implementationPages as originalImplementationPages } from './data/implementationPages.js';
+import { remainingImplementationPages } from './data/remainingImplementationPages.js';
+const implementationPages = [...originalImplementationPages, ...remainingImplementationPages];
+import ResearchStartPage from './pages/ResearchStartPage.jsx';
+import { researchStartPages } from './data/researchStartPages.js';
+import PhdEmbarking from './pages/PhdEmbarking.jsx';
+import { embarkingPath, embarkingData } from './data/phdEmbarking.js';
+import FastTrackPhd from './pages/FastTrackPhd.jsx';
+import { fastTrackPath, fastTrackData } from './data/fastTrackPhd.js';
+import PhdAdmissionAssistance from './pages/PhdAdmissionAssistance.jsx';
+import { admissionPath, phdAdmissionData } from './data/phdAdmissionAssistance.js';
+import MegaServicePanel, { MegaIcon } from './MegaServicePanel.jsx';
+import { activeHeaderKey, headerNavigation } from './data/headerNavigation.js';
+import ServicesSection from './components/ServicesSection.jsx';
+const ServicePage = lazy(() => import('./pages/ServicePage.jsx'));
+import ContactPage from './pages/ContactPage.jsx';
+import CompanyContact from './components/CompanyContact.jsx';
+import Footer from './components/Footer.jsx';
+import { companyInfo } from './data/companyInfo.js';
+import { Mail, Phone } from 'lucide-react';
+import { navigationPages, pageById, pageForPath, pathFor, routeAliases } from './data/navigation.js';
+const newServicePages = navigationPages.filter(page => !page.existing && page.id !== 'contact');
 
 const API_BASE = import.meta.env.VITE_API_BASE || (import.meta.env.DEV ? 'http://localhost:8000/api' : '/api');
-
-const navGroups = [
-  {
-    title: 'Where to Start',
-    items: ['PhD Admission Assistance', 'Research Journey Planning', 'Topic & Research Proposal', 'Problem Statement', 'Base Papers', 'Patent Support'],
-  },
-  {
-    title: 'Moving Along',
-    items: ['MATLAB Projects', 'Simulink Projects', 'Python Projects', 'Java Projects', 'Ansys Projects', 'Qualitative Analysis', 'Quantitative Analysis'],
-  },
-  {
-    title: 'Finishing Up',
-    items: ['Thesis Editing', 'Thesis Formatting'],
-  },
-  {
-    title: 'Also Do This',
-    items: ['Review Article', 'Empirical Article', 'Technical Article', 'IEEE / Scopus Paper Support', 'Researcher Profile Enhancement'],
-  },
-  {
-    title: 'PhD Guide',
-    items: ['Thought Clearing', 'Development Editing', 'Research Design'],
-  },
-];
-
-const services = [
-  ['Topic & Research Proposal', 'Shape a feasible research direction, research gap, objectives, questions and proposal framework.'],
-  ['Problem Statement', 'Convert a broad topic into a defensible problem statement grounded in the literature.'],
-  ['Base Paper Support', 'Identify useful research foundations and organise evidence for the proposed methodology.'],
-  ['Chapter Development Guidance', 'Structure thesis chapters, arguments, citations, tables and presentation in a consistent academic flow.'],
-  ['Questionnaire & Experiment Design', 'Map constructs, objectives and hypotheses into measurable items and practical experimental plans.'],
-  ['Software Implementation', 'Research-oriented implementation support for MATLAB, Python, Java, simulation and engineering tools.'],
-  ['Data Analysis', 'Descriptive and inferential analysis planning, statistical testing and interpretation workflows.'],
-  ['Editing', 'Language, logical-flow and academic-style review to improve readability and consistency.'],
-  ['Formatting', 'Apply university or journal formatting rules across headings, tables, figures, references and front matter.'],
-  ['Journal Paper Support', 'Plan manuscripts for SCI, Scopus and peer-reviewed journals with a clear contribution and submission structure.'],
-  ['Research Design', 'Align objectives, variables, sampling, instruments, data analysis and evidence before execution.'],
-  ['Technical Research Support', 'Engineering, computing and data-centric academic project support with a documented workflow.'],
-];
 
 const samples = [
   { type: 'Thesis', title: 'Short Literature Review', meta: 'Literature Review · Chapter Guidance', desc: 'A structured short review organised around themes, research gaps and evidence mapping.' },
@@ -49,17 +35,17 @@ const samples = [
 
 function Logo() {
   return (
-    <a className="brand" href="#top" aria-label="Lord-Tech Datus Thesis home">
+    <Link className="brand" to="/" aria-label="AcademicEdge Writing & Publication Services home">
       <span className="brand-mark" aria-hidden="true">
         <span className="mark-line a" />
         <span className="mark-line b" />
         <span className="mark-dot" />
       </span>
       <span>
-        <strong>LORD-TECH</strong>
-        <small>DATUS THESIS</small>
+        <strong>{companyInfo.shortName.toUpperCase()}</strong>
+        <small>{companyInfo.tagline.toUpperCase()}</small>
       </span>
-    </a>
+    </Link>
   );
 }
 
@@ -76,40 +62,112 @@ function Icon({ type }) {
   return <svg {...common}>{paths[type] || paths.book}</svg>;
 }
 
-function Header({ onQuote }) {
+function Header({ onQuote, activeMegaMenu, setActiveMegaMenu }) {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [compactNavigation, setCompactNavigation] = useState(() => window.matchMedia('(max-width: 1199px)').matches);
+  const [displayedMenu, setDisplayedMenu] = useState(activeMegaMenu);
+  const toggleRef = useRef(null);
+  const location = useLocation();
+  const currentPage = pageForPath(location.pathname);
+  const activeKey = activeHeaderKey(location.pathname);
+
+  const triggerRefs = useRef({});
+  const headerRef = useRef(null);
+  useEffect(() => {
+    const query = window.matchMedia('(max-width: 1199px)');
+    const update = () => { setCompactNavigation(query.matches); setMobileOpen(false); setActiveMegaMenu(null); };
+    query.addEventListener('change', update);
+    return () => query.removeEventListener('change', update);
+  }, [setActiveMegaMenu]);
+  useEffect(() => {
+    if (activeMegaMenu) {
+      setDisplayedMenu(activeMegaMenu);
+      if (compactNavigation) setMobileOpen(true);
+      return;
+    }
+    const timer = window.setTimeout(() => setDisplayedMenu(null), 200);
+    return () => window.clearTimeout(timer);
+  }, [activeMegaMenu, compactNavigation]);
+  const closePanel = () => {
+    setActiveMegaMenu(null);
+    triggerRefs.current[activeMegaMenu]?.focus({ preventScroll: true });
+  };
+  const closeNavigation = () => {
+    setActiveMegaMenu(null);
+    setMobileOpen(false);
+  };
+  useEffect(() => {
+    const handleEscape = event => {
+      if (event.key !== 'Escape') return;
+      if (activeMegaMenu) {
+        setActiveMegaMenu(null);
+        triggerRefs.current[activeMegaMenu]?.focus({ preventScroll: true });
+      } else {
+        setMobileOpen(false);
+        if (mobileOpen) toggleRef.current?.focus({ preventScroll: true });
+      }
+    };
+    const handleOutsidePointer = event => {
+      if (!headerRef.current?.contains(event.target)) {
+        setActiveMegaMenu(null);
+        setMobileOpen(false);
+      }
+    };
+    document.addEventListener('keydown', handleEscape);
+    document.addEventListener('pointerdown', handleOutsidePointer);
+    return () => {
+      document.removeEventListener('keydown', handleEscape);
+      document.removeEventListener('pointerdown', handleOutsidePointer);
+    };
+  }, [activeMegaMenu, mobileOpen, setActiveMegaMenu]);
+  const displayedItem = headerNavigation.find(item => item.key === displayedMenu);
+  const panel = displayedItem && <MegaServicePanel
+    menu={displayedItem}
+    isOpen={Boolean(activeMegaMenu)}
+    labelledBy={`mega-trigger-${displayedItem.key}`}
+    onClose={closePanel}
+    onSelect={closeNavigation}
+    mobile={compactNavigation}
+  />;
+  const shouldRenderHeaderPanel = !compactNavigation && displayedItem?.mega;
   return (
     <>
       <div className="accent-line" />
       <div className="topbar">
         <div className="container topbar-inner">
-          <span>Top-Notch Consulting for PhD Research & Journal Publications</span>
+          <span>Professional Research, Writing &amp; Publication Services</span>
           <div className="top-actions">
-            <a href="mailto:research@lordtech.example">research@lordtech.example</a>
-            <a href="tel:+910000000000">+91 00000 00000</a>
+            <a className="topbar-email" href={`mailto:${companyInfo.email}`} aria-label={`Email ${companyInfo.email}`}><Mail size={15} aria-hidden="true"/><span>{companyInfo.email}</span></a>
+            <a className="topbar-phone" href={`tel:${companyInfo.phones[0].value}`}><Phone size={15} aria-hidden="true"/><span>{companyInfo.phones[0].label}</span></a>
             <button className="mini-btn" onClick={onQuote}>Request a Quote</button>
           </div>
         </div>
       </div>
-      <header className="header" id="top">
+      <header className="header" id="top" ref={headerRef}>
         <div className="container header-inner">
           <Logo />
-          <button className="menu-toggle" onClick={() => setMobileOpen(v => !v)} aria-label="Toggle menu">
+          <button ref={toggleRef} className="menu-toggle" onClick={() => { setMobileOpen(v => !v); setActiveMegaMenu(null); }} aria-label="Toggle menu" aria-expanded={mobileOpen} aria-controls="main-navigation">
             <span/><span/><span/>
           </button>
-          <nav className={`nav ${mobileOpen ? 'open' : ''}`}>
-            <a href="#top" onClick={() => setMobileOpen(false)}>Home</a>
-            {navGroups.map(group => (
-              <div className="nav-group" key={group.title}>
-                <button>{group.title}<span>⌄</span></button>
-                <div className="dropdown">
-                  {group.items.map(item => <a key={item} href="#services" onClick={() => setMobileOpen(false)}>{item}</a>)}
-                </div>
+          <nav id="main-navigation" aria-label="Main navigation" className={`nav ${mobileOpen ? 'open' : ''}`}>
+            {headerNavigation.map(item => item.groups ? (
+              <div className="nav-group" key={item.key}>
+                <button
+                  type="button"
+                  id={`mega-trigger-${item.key}`}
+                  ref={element => { triggerRefs.current[item.key] = element; }}
+                  aria-expanded={activeMegaMenu === item.key}
+                  aria-haspopup="true"
+                  className={activeKey === item.key ? 'nav-parent-active' : undefined}
+                  aria-controls={activeMegaMenu === item.key ? `mega-panel-${item.key}` : undefined}
+                  onClick={() => setActiveMegaMenu(current => current === item.key ? null : item.key)}
+                >{item.label}<MegaIcon type="chevron"/></button>
+                {displayedMenu === item.key && (compactNavigation || !item.mega) && panel}
               </div>
-            ))}
-            <a href="#contact" onClick={() => setMobileOpen(false)}>Contact</a>
+            ) : <Link key={item.key} to={item.path} onClick={closeNavigation} aria-current={activeKey === item.key ? 'page' : undefined}>{item.label}</Link>)}
           </nav>
         </div>
+        {shouldRenderHeaderPanel && panel}
       </header>
     </>
   );
@@ -125,7 +183,7 @@ function Hero({ onQuote }) {
         <p>Practical research guidance for scholars who need a clear route from topic selection and research design to analysis, implementation, thesis development and journal submission.</p>
         <div className="hero-buttons">
           <button className="btn primary" onClick={onQuote}>Discuss Your Research <span>→</span></button>
-          <a className="btn ghost" href="#services">Explore Services</a>
+          <Link className="btn ghost" to="/#services">Explore Services</Link>
         </div>
       </div>
       <div className="hero-cta" onClick={onQuote} role="button" tabIndex="0">
@@ -146,7 +204,7 @@ function IntroStats() {
           <h2>Turn a difficult research journey into a structured process.</h2>
           <p>Doctoral work becomes expensive and slow when the topic, objectives, methodology and evidence are developed in isolation. Our workflow starts by aligning these pieces before the heavy work begins.</p>
           <p>Use the platform as a single place to organise research planning, questionnaire design, analysis, technical implementation, thesis improvement and publication preparation.</p>
-          <a className="text-link" href="#services">See how the workflow is organised <span>→</span></a>
+          <Link className="text-link" to="/#services">See how the workflow is organised <span>→</span></Link>
           <div className="feature-row">
             <div><Icon type="compass"/><div><b>Research-led planning</b><span>Objectives, variables and methods remain aligned.</span></div></div>
             <div><Icon type="chart"/><div><b>Evidence-first analysis</b><span>Tables, tests and conclusions follow the research questions.</span></div></div>
@@ -173,30 +231,6 @@ function PromiseStrip() {
         <div><Icon type="book"/><div><h3>Our Services</h3><b>Covers a Wide Range</b><p>Research support organised across the entire doctoral journey.</p></div></div>
         <div><Icon type="code"/><div><h3>Our Experts</h3><b>Subject-Specific Precision</b><p>Academic, statistical, technical and editorial expertise for diverse domains.</p></div></div>
         <div><Icon type="edit"/><div><h3>Our Guarantee</h3><b>Effective & Efficient</b><p>Clear scope, documented delivery and structured revision cycles.</p></div></div>
-      </div>
-    </section>
-  );
-}
-
-function Services() {
-  return (
-    <section className="section services" id="services">
-      <div className="container">
-        <div className="section-heading centered">
-          <span className="section-kicker">ACADEMIC RESEARCH SERVICES</span>
-          <h2>Everything needed across the research lifecycle.</h2>
-          <p>Browse the major service areas. Each card can later be connected to a dedicated service page without changing the overall design system.</p>
-        </div>
-        <div className="service-grid">
-          {services.map(([title, desc], i) => (
-            <article className="service-card" key={title}>
-              <span className="service-no">{String(i + 1).padStart(2, '0')}</span>
-              <h3>{title}</h3>
-              <p>{desc}</p>
-              <a href="#contact">Learn More <span>→</span></a>
-            </article>
-          ))}
-        </div>
       </div>
     </section>
   );
@@ -241,7 +275,7 @@ function SampleWork() {
               <h3>{item.title}</h3>
               <small>{item.meta}</small>
               <p>{item.desc}</p>
-              <a href="#contact">Request a similar plan <span>↗</span></a>
+              <Link to="/#contact">Request a similar plan <span>↗</span></Link>
             </article>
           ))}
         </div>
@@ -250,8 +284,8 @@ function SampleWork() {
   );
 }
 
-function LeadForm({ compact = false, source = 'callback', afterSubmit }) {
-  const [form, setForm] = useState({ name: '', email: '', phone: '', service: '', message: '' });
+function LeadForm({ compact = false, source = 'callback', afterSubmit, initialService = '' }) {
+  const [form, setForm] = useState({ name: '', email: '', phone: '', service: initialService, message: '' });
   const [state, setState] = useState({ loading: false, message: '', ok: false });
   const set = e => setForm(f => ({ ...f, [e.target.name]: e.target.value }));
 
@@ -259,13 +293,14 @@ function LeadForm({ compact = false, source = 'callback', afterSubmit }) {
     e.preventDefault();
     setState({ loading: true, message: '', ok: false });
     try {
-      const res = await fetch(`${API_BASE}/submit.php`, {
+      const endpoint = source === 'quote-modal' ? 'quote.php' : source === 'contact-page' ? 'contact.php' : 'submit.php';
+      const res = await fetch(`${API_BASE}/${endpoint}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ ...form, source }),
       });
       const data = await res.json();
-      if (!res.ok || !data.ok) throw new Error(data.message || 'Could not submit the form.');
+      if (!res.ok || !(data.ok || data.success)) throw new Error(data.message || 'Could not submit the form.');
       setState({ loading: false, message: data.message, ok: true });
       setForm({ name: '', email: '', phone: '', service: '', message: '' });
       if (afterSubmit) setTimeout(afterSubmit, 900);
@@ -278,12 +313,12 @@ function LeadForm({ compact = false, source = 'callback', afterSubmit }) {
     <form className={`lead-form ${compact ? 'compact' : ''}`} onSubmit={submit}>
       <div className="form-grid">
         <label><span>Name *</span><input required name="name" value={form.name} onChange={set} placeholder="Your name" /></label>
-        <label><span>Email *</span><input required type="email" name="email" value={form.email} onChange={set} placeholder="you@example.com" /></label>
-        <label><span>Phone</span><input name="phone" value={form.phone} onChange={set} placeholder="+91 ..." /></label>
-        <label><span>Service</span><select name="service" value={form.service} onChange={set}><option value="">Choose service</option>{services.slice(0, 8).map(([s]) => <option key={s}>{s}</option>)}</select></label>
+        <label><span>Email *</span><input required type="email" name="email" autoComplete="email" value={form.email} onChange={set} placeholder="Your email address" /></label>
+        <label><span>{source === 'quote-modal' ? 'Phone *' : 'Phone'}</span><input required={source === 'quote-modal'} name="phone" type="tel" autoComplete="tel" value={form.phone} onChange={set} placeholder="Your phone number" /></label>
+        <label><span>{source === 'contact-page' ? 'Research Requirement' : 'Service'}</span><select name="service" value={form.service} onChange={set}><option value="">Choose service</option>{navigationPages.filter(page => !['home', 'contact'].includes(page.id)).map(page => <option key={page.id} value={page.displayTitle || page.title}>{page.displayTitle || page.title}</option>)}</select></label>
       </div>
-      <label><span>Research Requirement *</span><textarea required name="message" value={form.message} onChange={set} rows={compact ? 3 : 5} placeholder="Briefly describe your topic, stage and support needed." /></label>
-      <button className="btn primary full" disabled={state.loading}>{state.loading ? 'Submitting…' : 'Send Request →'}</button>
+      <label><span>{source === 'contact-page' ? 'Message *' : 'Research Requirement *'}</span><textarea required name="message" value={form.message} onChange={set} rows={compact ? 3 : 5} placeholder="Briefly describe your topic, stage and support needed." /></label>
+      <button className="btn primary full" disabled={state.loading}>{state.loading ? 'Submitting…' : source === 'contact-page' ? 'Submit Enquiry' : 'Send Request →'}</button>
       {state.message && <div className={`form-message ${state.ok ? 'ok' : 'bad'}`}>{state.message}</div>}
     </form>
   );
@@ -296,12 +331,8 @@ function Callback() {
         <div className="callback-copy">
           <span className="section-kicker light">REQUEST A CALL BACK</span>
           <h2>Tell us where your research is stuck.</h2>
-          <p>Use this local form to test the complete React + PHP flow. Submissions are stored as newline-delimited JSON in the backend storage folder.</p>
-          <div className="contact-list">
-            <a href="mailto:research@lordtech.example">✉ research@lordtech.example</a>
-            <a href="tel:+910000000000">☎ +91 00000 00000</a>
-            <span>◷ Mon–Sat · 10:00 AM–7:00 PM</span>
-          </div>
+          <p>Share your current research stage, the support you need and a convenient way to reach you.</p>
+          <CompanyContact compact />
         </div>
         <div className="form-panel">
           <h3>Research Enquiry</h3>
@@ -309,20 +340,6 @@ function Callback() {
         </div>
       </div>
     </section>
-  );
-}
-
-function Footer() {
-  return (
-    <footer className="footer">
-      <div className="container footer-grid">
-        <div className="footer-about"><Logo/><p>A clean-room React + PHP implementation inspired by the information architecture of a research consultancy website. Replace the demo contact information and copy with your final business content.</p></div>
-        <div><h4>Research Services</h4><a href="#services">Topic & Proposal</a><a href="#services">Research Design</a><a href="#services">Questionnaire</a><a href="#services">Data Analysis</a><a href="#services">Chapter Guidance</a></div>
-        <div><h4>Technical Support</h4><a href="#services">MATLAB</a><a href="#services">Python</a><a href="#services">Java</a><a href="#services">Ansys</a><a href="#services">Simulation</a></div>
-        <div><h4>Publication</h4><a href="#services">Review Paper</a><a href="#services">Empirical Paper</a><a href="#services">Scopus Support</a><a href="#services">Editing</a><a href="#services">Formatting</a></div>
-      </div>
-      <div className="container footer-bottom"><span>© {new Date().getFullYear()} Lord-Tech Datus Thesis. Demo local website.</span><span>Privacy · Terms · Sitemap</span></div>
-    </footer>
   );
 }
 
@@ -334,7 +351,8 @@ function QuoteModal({ open, onClose }) {
         <button className="modal-close" onClick={onClose}>×</button>
         <span className="section-kicker">REQUEST A QUOTE</span>
         <h2>Share your research requirement.</h2>
-        <p>Fill this form to test the PHP submission endpoint locally.</p>
+        <p>Tell {companyInfo.name} about your research, or contact us directly.</p>
+        <CompanyContact compact />
         <LeadForm compact source="quote-modal" afterSubmit={onClose} />
       </div>
     </div>
@@ -343,21 +361,55 @@ function QuoteModal({ open, onClose }) {
 
 export default function App() {
   const [quoteOpen, setQuoteOpen] = useState(false);
+  const [activeMegaMenu, setActiveMegaMenu] = useState(null);
+  const location = useLocation();
+  const requestedService = new URLSearchParams(location.search).get('service') || '';
+  const contactService = navigationPages.some(page => (page.displayTitle || page.title) === requestedService) ? requestedService : '';
+  useEffect(() => {
+    setActiveMegaMenu(null);
+    const isAdmission = location.pathname.replace(/\/$/, '') === admissionPath;
+    const isFastTrack = location.pathname.replace(/\/$/, '') === fastTrackPath;
+    const isEmbarking = location.pathname.replace(/\/$/, '') === embarkingPath;
+    const researchPage = [...researchStartPages, ...implementationPages].find(page => page.path === location.pathname.replace(/\/$/, ''));
+    if (pageForPath(location.pathname)?.existing) {
+      document.title = researchPage ? `${researchPage.label} | ${companyInfo.shortName}` : isEmbarking ? `${embarkingData.title} | ${companyInfo.shortName}` : isFastTrack ? `${fastTrackData.title} | ${companyInfo.shortName}` : isAdmission ? `PhD Admission Assistance | ${companyInfo.shortName}` : companyInfo.name;
+      document.querySelector('meta[name="description"]')?.setAttribute('content', researchPage ? researchPage.description : isEmbarking ? embarkingData.description : isFastTrack ? fastTrackData.description : isAdmission ? phdAdmissionData.description : 'AcademicEdge Writing & Publication Services provides academic writing, research, thesis, journal manuscript, book publication, editing, formatting and technical research support.');
+    } else if (location.pathname.replace(/\/$/, '') === '/contact') {
+      document.title = `Contact ${companyInfo.name}`;
+      document.querySelector('meta[name="description"]')?.setAttribute('content', 'Discuss your academic writing, research and publication requirements with the AcademicEdge team. Share your current stage, service needs and timeline through the research enquiry form.');
+    } else if (!pageForPath(location.pathname) && !routeAliases.some(alias => alias.path === location.pathname)) {
+      document.title = `Page Not Found | ${companyInfo.shortName}`;
+      document.querySelector('meta[name="description"]')?.setAttribute('content', `This page could not be found. Explore ${companyInfo.shortName} research services or contact the team for help finding the right support.`);
+    }
+    const frame = requestAnimationFrame(() => {
+      if (location.hash) document.getElementById(decodeURIComponent(location.hash.slice(1)))?.scrollIntoView();
+      else window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    });
+    return () => cancelAnimationFrame(frame);
+  }, [location]);
   const openQuote = () => setQuoteOpen(true);
   return (
     <div className="site-shell">
-      <Header onQuote={openQuote} />
-      <main>
+      <Header onQuote={openQuote} activeMegaMenu={activeMegaMenu} setActiveMegaMenu={setActiveMegaMenu} />
+      <main><Routes><Route path="/" element={<>
         <Hero onQuote={openQuote} />
         <IntroStats />
         <PromiseStrip />
-        <Services />
+        <ServicesSection />
         <Webinar />
         <SampleWork />
         <Callback />
-      </main>
-      <Footer />
-      <button className="floating-call" onClick={openQuote} aria-label="Request a call">☎<span>Request a Call</span></button>
+      </>}/><Route path={admissionPath} element={<PhdAdmissionAssistance apiBase={API_BASE} onContact={openQuote} onOpenStart={() => { setActiveMegaMenu('research-services'); }}/>} />
+<Route path={fastTrackPath} element={<FastTrackPhd onEnquire={openQuote} onOpenStart={() => { setActiveMegaMenu('research-services'); }}/>} />
+<Route path={embarkingPath} element={<PhdEmbarking onQuote={openQuote} callbackForm={<LeadForm source="phd-embarking-callback"/>} onOpenStart={() => { setActiveMegaMenu('research-services'); }}/>} />
+{researchStartPages.map(data => <Route key={data.path} path={data.path} element={<ResearchStartPage key={data.path} data={data} apiBase={API_BASE} onQuote={openQuote} callbackForm={<LeadForm source={data.path.slice(10) + '-callback'}/>} onOpenStart={() => { setActiveMegaMenu('research-services'); }}/>} />)}
+{implementationPages.map(data => <Route key={data.path} path={data.path} element={<ImplementationPage key={data.path} data={data} onQuote={openQuote} callbackForm={<LeadForm source={data.path.slice(10) + '-callback'}/>} onOpenImplementation={() => { setActiveMegaMenu('other-services'); }}/>} />)}
+      {newServicePages.map(page => <Route key={page.path} path={page.path} element={<Suspense fallback={<p className="container section" role="status">Loading research support…</p>}><ServicePage key={page.path} page={page} onQuote={openQuote} /></Suspense>} />)}
+      <Route path={pathFor('contact')} element={<ContactPage onQuote={openQuote} form={<LeadForm key={contactService} source="contact-page" initialService={contactService} />} />} />
+      {routeAliases.map(alias => <Route key={alias.path} path={alias.path} element={<Navigate to={{ pathname: alias.to, search: location.search, hash: location.hash }} replace />} />)}
+      <Route path="*" element={<section className="service-detail"><div className="service-detail__container section"><span className="section-kicker">404 · PAGE NOT FOUND</span><h1>Let’s find the right research support.</h1><p>This address does not match a page on this website. Choose a service from the navigation or contact {companyInfo.shortName} with your requirement.</p><div className="service-detail__actions"><Link className="btn primary" to="/">Return Home</Link><Link className="btn ghost" to={pathFor('contact')}>Contact {companyInfo.shortName}</Link></div></div></section>}/></Routes></main>
+      <Footer logo={<Logo />} />
+      <a className="floating-call" href={`tel:${companyInfo.phones[0].value}`} aria-label={`Call ${companyInfo.name} on ${companyInfo.phones[0].label}`}>☎<span>Request a Call</span></a>
       <QuoteModal open={quoteOpen} onClose={() => setQuoteOpen(false)} />
     </div>
   );

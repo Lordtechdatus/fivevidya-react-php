@@ -1,0 +1,17 @@
+.research-start-page .rs-card { border-top: 3px solid var(--teal); }
+.research-start-page .rs-card p:last-child { margin-bottom: 0; }
+.research-start-page .rs-timeline { grid-template-columns: minmax(0, 1fr); gap: 26px; padding-left: 24px; border-left: 2px solid #c8dfd7; }
+.research-start-page .rs-timeline .rs-card { position: relative; }
+.research-start-page .rs-timeline .rs-card::before { content: ''; position: absolute; top: 30px; left: -33px; width: 14px; height: 14px; border-radius: 50%; background: var(--teal); border: 3px solid #f5f8f7; }
+.research-start-page .rs-timeline .ad-checklist { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 20px; }
+.research-start-page .rs-related { display: flex; align-items: center; gap: 14px; transition: border-color .2s, box-shadow .2s; }
+.research-start-page .rs-related strong { min-width: 0; font-size: 17px; line-height: 1.4; }
+.research-start-page .rs-related > span { margin-left: auto; color: var(--teal); }
+.research-start-page .rs-related:hover { border-color: #91c4b9; box-shadow: 0 8px 20px rgb(7 90 90 / 7%); }
+.research-start-page .rs-disclaimer { padding-bottom: 40px; }
+.research-start-page .ad-cta-inner > .btn { flex-shrink: 0; max-width: 100%; }
+.research-start-page .lead-form label span { font-size: 14px; }
+.research-start-page .lead-form :is(input, select, textarea) { min-height: 48px; font-size: 16px; }
+@media (max-width: 767px) {
+  .research-start-page .lead-form .form-grid, .research-start-page .rs-timeline .ad-checklist { grid-template-columns: minmax(0, 1fr); }
+}

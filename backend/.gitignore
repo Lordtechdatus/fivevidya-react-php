@@ -1,0 +1,6 @@
+.env
+logs/*.log
+storage/*.ndjson
+storage/rate-limit/*.json
+!logs/.gitkeep
+!storage/.gitkeep

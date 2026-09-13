@@ -1,0 +1,14 @@
+DirectoryIndex index.html
+<FilesMatch "^(\.env|.*\.sql|.*\.log)$">
+  Require all denied
+</FilesMatch>
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  # Real files/directories and API/static paths must not be rewritten to HTML.
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+  RewriteRule ^(?:api|assets)(?:/|$) - [L]
+  RewriteRule \.[a-zA-Z0-9]+$ - [L]
+  RewriteRule ^ index.html [L]
+</IfModule>

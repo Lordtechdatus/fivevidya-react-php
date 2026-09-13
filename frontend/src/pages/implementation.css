@@ -1,0 +1,27 @@
+.implementation-page .implementation-model { margin: 0; padding: 34px; }
+.implementation-page .implementation-model-grid { display: grid; gap: 28px; }
+.implementation-page .implementation-model h3 { margin-top: 0; }
+.implementation-page .implementation-blocks { list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 38px; padding: 30px; margin: 24px 0; border: 1px solid #d9e6e1; background-color: #f0f7f4; background-image: radial-gradient(#c8ddd3 1px, transparent 1px); background-size: 16px 16px; }
+.implementation-page .implementation-blocks li { position: relative; display: flex; flex-direction: column; justify-content: center; text-align: center; padding: 24px 14px; background: #fff; border: 1px solid #8bb9ad; border-top: 3px solid var(--teal); min-width: 0; }
+.implementation-page .implementation-blocks strong { color: var(--teal-deep); font-size: 18px; }
+.implementation-page .implementation-blocks li > span { font-size: 15px; color: #60736c; margin-top: 8px; }
+.implementation-page .implementation-blocks li:not(:last-child)::after { content: '→'; position: absolute; right: -32px; top: 50%; transform: translateY(-50%); font-size: 26px; color: var(--teal); }
+.implementation-page .implementation-sources { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 20px; margin-top: 26px; font-size: 13px; color: #66736c; }
+.implementation-page .implementation-timeline { list-style: none; margin: 0; padding: 0; }
+.implementation-page .implementation-timeline li { display: grid; grid-template-columns: 100px minmax(0, 1fr); gap: 28px; position: relative; padding-bottom: 32px; }
+.implementation-page .implementation-timeline li:last-child { padding-bottom: 0; }
+.implementation-page .implementation-timeline h3 { margin-top: 8px; }
+.implementation-page .implementation-step { background: #e6f1ec; border: 1px solid #c1dbd0; color: var(--teal-dark); font-weight: 750; padding: 12px; text-align: center; align-self: start; }
+.implementation-page .implementation-timeline li:not(:last-child)::before { content: ''; position: absolute; width: 2px; background: #c1dbd0; top: 54px; bottom: 0; left: 49px; }
+.implementation-page .ad-checklist:empty { display: none; }
+@media (max-width: 767px) {
+  .implementation-page .implementation-model { padding: 22px; }
+  .implementation-page .implementation-blocks { grid-template-columns: minmax(0, 1fr); padding: 18px; gap: 38px; }
+  .implementation-page .implementation-blocks li:not(:last-child)::after { content: '↓'; right: 50%; top: auto; bottom: -37px; transform: translateX(50%); }
+  .implementation-page .implementation-timeline li { grid-template-columns: 68px minmax(0, 1fr); gap: 16px; }
+  .implementation-page .implementation-step { padding: 12px 5px; font-size: 14px; }
+  .implementation-page .implementation-timeline li:not(:last-child)::before { left: 33px; }
+}
+@media (min-width: 1200px) {
+  .implementation-page .implementation-card-group--3 > .ad-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}

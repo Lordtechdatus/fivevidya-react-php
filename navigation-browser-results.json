@@ -1,0 +1,1498 @@
+{
+  "desktopMenuChecks": [
+    {
+      "active": "Where to Start",
+      "description": "Begin your doctoral journey with an informed route into research and a clear foundation for the study.",
+      "footers": 1,
+      "h1": [
+        "Where to Start"
+      ],
+      "headers": 1,
+      "menuClosed": true,
+      "overflow": false,
+      "path": "/where-to-start",
+      "scroll": 0,
+      "title": "Where to Start Support | Lord-Tech",
+      "words": 512,
+      "menuLabel": "Where to Start"
+    },
+    {
+      "active": "Where to Start",
+      "description": "Professional guidance for PhD university selection, faculty matching, application review, SOP and proposal preparation, interview planning and international doctoral admissions.",
+      "footers": 1,
+      "h1": [
+        "Apply for PhD Programs Across Leading International Universities"
+      ],
+      "headers": 1,
+      "menuClosed": true,
+      "overflow": false,
+      "path": "/services/phd-admission-assistance",
+      "scroll": 0,
+      "title": "PhD Admission Assistance | Lord-Tech Datus Thesis",
+      "words": 1449,
+      "menuLabel": "PhD Admission Assistance"
+    },
+    {
+      "active": "Where to Start",
+      "description": "Explore a structured publication-based doctoral support pathway for experienced professionals, with research mentoring, portfolio review, synthesis report guidance and viva preparation.",
+      "footers": 1,
+      "h1": [
+        "Fast-Track PhD by Research Publication"
+      ],
+      "headers": 1,
+      "menuClosed": true,
+      "overflow": false,
+      "path": "/services/fast-track-phd-by-research-publication",
+      "scroll": 0,
+      "title": "Fast-Track PhD by Research Publication | Lord-Tech Datus Thesis",
+      "words": 953,
+      "menuLabel": "Fast-Track PhD by Research Publication"
+    },
+    {
+      "active": "Where to Start",
+      "description": "Plan your PhD journey with a clear research purpose, a suitable university and supervisor, and a realistic assessment of time, resources and research feasibility.",
+      "footers": 1,
+      "h1": [
+        "PhD – Embarking the Journey"
+      ],
+      "headers": 1,
+      "menuClosed": true,
+      "overflow": false,
+      "path": "/services/phd-embarking-the-journey",
+      "scroll": 0,
+      "title": "PhD – Embarking the Journey | Lord-Tech Datus Thesis",
+      "words": 1059,
+      "menuLabel": "PhD – Embarking the Journey"
+    },
+    {
+      "active": "Where to Start",
+      "description": "Research topic selection and proposal guidance to align your questions, literature, methodology and intended contribution.",
+      "footers": 1,
+      "h1": [
+        "Topic and PhD Research Proposal"
+      ],
+      "headers": 1,
+      "menuClosed": true,
+      "overflow": false,
+      "path": "/services/topic-and-research-proposal",
+      "scroll": 0,
+      "title": "Topic and Research Proposal | Lord-Tech Datus Thesis",
+      "words": 749,
+      "menuLabel": "Topic and Research Proposal"
+    },
+    {
+      "active": "Where to Start",
+      "description": "Guidance for developing a clear, evidence-backed and defensible PhD problem statement aligned with your research objectives.",
+      "footers": 1,
+      "h1": [
+        "Problem Statement Development for PhD Research"
+      ],
+      "headers": 1,
+      "menuClosed": true,
+      "overflow": false,
+      "path": "/services/problem-statement",
+      "scroll": 0,
+      "title": "Problem Statement | Lord-Tech Datus Thesis",
+      "words": 729,
+      "menuLabel": "Problem Statement"
+    },
+    {
+      "active": "Where to Start",
+      "description": "Support for identifying and comparing relevant base papers, research methods, datasets and implementation approaches.",
+      "footers": 1,
+      "h1": [
+        "Base Papers for Research and Implementation"
+      ],
+      "headers": 1,
+      "menuClosed": true,
+      "overflow": false,
+      "path": "/services/base-papers",
+      "scroll": 0,
+      "title": "Base Papers | Lord-Tech Datus Thesis",
+      "words": 671,
+      "menuLabel": "Base Papers"
+    },
+    {
+      "active": "Also Do This",
+      "description": "Research-focused patent support covering prior-art analysis, technical documentation and coordination with qualified patent professionals.",
+      "footers": 1,
+      "h1": [
+        "Protect Your Research: Patent Support & Consulting"
+      ],
+      "headers": 1,
+      "menuClosed": true,
+      "overflow": false,
+      "path": "/services/patent-support-and-consulting",
+      "scroll": 0,
+      "title": "Patent Support and Consulting | Lord-Tech Datus Thesis",
+      "words": 858,
+      "menuLabel": "Patent Support and Consulting"
+    },
+    {
+      "active": "Where to Start",
+      "description": "Begin your doctoral journey with an informed route into research and a clear foundation for the study.",
+      "footers": 1,
+      "h1": [
+        "Where to Start"
+      ],
+      "headers": 1,
+      "menuClosed": true,
+      "overflow": false,
+      "path": "/where-to-start",
+      "scroll": 0,
+      "title": "Where to Start Support | Lord-Tech",
+      "words": 512,
+      "menuLabel": "Explore Where to Start"
+    },
+    {
+      "active": "Moving Along",
+      "description": "Turn a research method into an implementation that can be examined, tested and explained.",
+      "footers": 1,
+      "h1": [
+        "Implementation"
+      ],
+      "headers": 1,
+      "menuClosed": true,
+      "overflow": false,
+      "path": "/implementation",
+      "scroll": 0,
+      "title": "Implementation Support | Lord-Tech",
+      "words": 875,
+      "menuLabel": "Implementation"
+    },
+    {
+      "active": "Moving Along",
+      "description": "MATLAB project support for numerical computing, algorithm development, matrix operations, visualization and research implementation.",
+      "footers": 1,
+      "h1": [
+        "MATLAB Software & Research Implementation"
+      ],
+      "headers": 1,
+      "menuClosed": true,
+      "overflow": false,
+      "path": "/services/matlab-projects",
+      "scroll": 0,
+      "title": "MATLAB Projects | Lord-Tech Datus Thesis",
+      "words": 858,
+      "menuLabel": "MATLAB Projects"
+    },
+    {
+      "active": "Moving Along",
+      "description": "Simulink model-development support for block diagrams, dynamic simulation, algorithms, solver selection and performance validation.",
+      "footers": 1,
+      "h1": [
+        "Simulink Implementation & Model Development"
+      ],
+      "headers": 1,
+      "menuClosed": true,
+      "overflow": false,
+      "path": "/services/simulink-projects",
+      "scroll": 0,
+      "title": "Simulink Projects | Lord-Tech Datus Thesis",
+      "words": 954,
+      "menuLabel": "Simulink Projects"
+    },
+    {
+      "active": "Moving Along",
+      "description": "Python research implementation support for data analysis, automation, machine learning, custom coding, debugging and reproducible workflows.",
+      "footers": 1,
+      "h1": [
+        "Python Implementation & Research Development"
+      ],
+      "headers": 1,
+      "menuClosed": true,
+      "overflow": false,
+      "path": "/services/python-projects",
+      "scroll": 0,
+      "title": "Python Projects | Lord-Tech Datus Thesis",
+      "words": 850,
+      "menuLabel": "Python Projects"
+    },
+    {
+      "active": "Moving Along",
+      "description": "Java implementation guidance for object-oriented applications, research software, environment setup, development, testing and maintenance.",
+      "footers": 1,
+      "h1": [
+        "Java Implementation & Application Development"
+      ],
+      "headers": 1,
+      "menuClosed": true,
+      "overflow": false,
+      "path": "/services/java-projects",
+      "scroll": 0,
+      "title": "Java Projects | Lord-Tech Datus Thesis",
+      "words": 849,
+      "menuLabel": "Java Projects"
+    },
+    {
+      "active": "Moving Along",
+      "description": "ANSYS simulation support for geometry, meshing, model selection, solver setup, engineering analysis, validation and research reporting.",
+      "footers": 1,
+      "h1": [
+        "ANSYS Simulation & Engineering Implementation"
+      ],
+      "headers": 1,
+      "menuClosed": true,
+      "overflow": false,
+      "path": "/services/ansys-projects",
+      "scroll": 0,
+      "title": "ANSYS Projects | Lord-Tech Datus Thesis",
+      "words": 883,
+      "menuLabel": "ANSYS Projects"
+    },
+    {
+      "active": "Moving Along",
+      "description": "Make the connection between your research questions and the evidence collected to answer them.",
+      "footers": 1,
+      "h1": [
+        "Analysis"
+      ],
+      "headers": 1,
+      "menuClosed": true,
+      "overflow": false,
+      "path": "/analysis",
+      "scroll": 0,
+      "title": "Analysis Support | Lord-Tech",
+      "words": 781,
+      "menuLabel": "Analysis"
+    },
+    {
+      "active": "Moving Along",
+      "description": "Understand the experiences, meanings and contexts represented in your qualitative evidence.",
+      "footers": 1,
+      "h1": [
+        "Qualitative Data Analysis"
+      ],
+      "headers": 1,
+      "menuClosed": true,
+      "overflow": false,
+      "path": "/qualitative-data-analysis",
+      "scroll": 0,
+      "title": "Qualitative Data Analysis Support | Lord-Tech",
+      "words": 808,
+      "menuLabel": "Qualitative Data Analysis"
+    },
+    {
+      "active": "Moving Along",
+      "description": "Develop a transparent account of numerical research evidence, from data preparation to interpretation.",
+      "footers": 1,
+      "h1": [
+        "Quantitative Data Analysis"
+      ],
+      "headers": 1,
+      "menuClosed": true,
+      "overflow": false,
+      "path": "/quantitative-data-analysis",
+      "scroll": 0,
+      "title": "Quantitative Data Analysis Support | Lord-Tech",
+      "words": 797,
+      "menuLabel": "Quantitative Data Analysis"
+    },
+    {
+      "active": "Moving Along",
+      "description": "Support the research work that connects planning, evidence and written communication.",
+      "footers": 1,
+      "h1": [
+        "Other Services"
+      ],
+      "headers": 1,
+      "menuClosed": true,
+      "overflow": false,
+      "path": "/other-services",
+      "scroll": 0,
+      "title": "Other Services Support | Lord-Tech",
+      "words": 453,
+      "menuLabel": "Other Services"
+    },
+    {
+      "active": "Moving Along",
+      "description": "Build a thesis whose chapters contribute to one clear research argument.",
+      "footers": 1,
+      "h1": [
+        "Chapters Writing"
+      ],
+      "headers": 1,
+      "menuClosed": true,
+      "overflow": false,
+      "path": "/chapters-writing",
+      "scroll": 0,
+      "title": "Chapters Writing Support | Lord-Tech",
+      "words": 834,
+      "menuLabel": "Chapters Writing"
+    },
+    {
+      "active": "Moving Along",
+      "description": "Collect evidence that can answer your research questions.",
+      "footers": 1,
+      "h1": [
+        "Questionnaire and Experiments"
+      ],
+      "headers": 1,
+      "menuClosed": true,
+      "overflow": false,
+      "path": "/questionnaire-and-experiments",
+      "scroll": 0,
+      "title": "Questionnaire and Experiments Support | Lord-Tech",
+      "words": 820,
+      "menuLabel": "Questionnaire and Experiments"
+    },
+    {
+      "active": "Moving Along",
+      "description": "Improve the clarity and natural flow of academic text while preserving the author’s meaning and responsibility.",
+      "footers": 1,
+      "h1": [
+        "Humanise AI Academic Content"
+      ],
+      "headers": 1,
+      "menuClosed": true,
+      "overflow": false,
+      "path": "/humanise-ai-academic-content",
+      "scroll": 0,
+      "title": "Humanise AI Academic Content Support | Lord-Tech",
+      "words": 818,
+      "menuLabel": "Humanise AI Academic Content"
+    },
+    {
+      "active": "Moving Along",
+      "description": "Move from an approved direction to evidence, implementation and a coherent research document.",
+      "footers": 1,
+      "h1": [
+        "Moving Along"
+      ],
+      "headers": 1,
+      "menuClosed": true,
+      "overflow": false,
+      "path": "/moving-along",
+      "scroll": 0,
+      "title": "Moving Along Support | Lord-Tech",
+      "words": 489,
+      "menuLabel": "Explore Moving Along"
+    },
+    {
+      "active": "Finishing Up",
+      "description": "Prepare a stable research document for its next academic review.",
+      "footers": 1,
+      "h1": [
+        "Finishing Up"
+      ],
+      "headers": 1,
+      "menuClosed": true,
+      "overflow": false,
+      "path": "/finishing-up",
+      "scroll": 0,
+      "title": "Finishing Up Support | Lord-Tech",
+      "words": 422,
+      "menuLabel": "Finishing Up"
+    },
+    {
+      "active": "Finishing Up",
+      "description": "Help readers engage with your research through clear, consistent academic expression.",
+      "footers": 1,
+      "h1": [
+        "Editing"
+      ],
+      "headers": 1,
+      "menuClosed": true,
+      "overflow": false,
+      "path": "/editing",
+      "scroll": 0,
+      "title": "Editing Support | Lord-Tech",
+      "words": 809,
+      "menuLabel": "Editing"
+    },
+    {
+      "active": "Finishing Up",
+      "description": "Present your thesis or manuscript in a consistent format that follows the requirements supplied for its destination.",
+      "footers": 1,
+      "h1": [
+        "Formatting"
+      ],
+      "headers": 1,
+      "menuClosed": true,
+      "overflow": false,
+      "path": "/formatting",
+      "scroll": 0,
+      "title": "Formatting Support | Lord-Tech",
+      "words": 802,
+      "menuLabel": "Formatting"
+    },
+    {
+      "active": "Finishing Up",
+      "description": "Prepare a stable research document for its next academic review.",
+      "footers": 1,
+      "h1": [
+        "Finishing Up"
+      ],
+      "headers": 1,
+      "menuClosed": true,
+      "overflow": false,
+      "path": "/finishing-up",
+      "scroll": 0,
+      "title": "Finishing Up Support | Lord-Tech",
+      "words": 422,
+      "menuLabel": "Explore Finishing Up"
+    },
+    {
+      "active": "Also Do This",
+      "description": "Develop a manuscript that communicates a clear contribution to its intended scholarly audience.",
+      "footers": 1,
+      "h1": [
+        "Journal Papers"
+      ],
+      "headers": 1,
+      "menuClosed": true,
+      "overflow": false,
+      "path": "/journal-papers",
+      "scroll": 0,
+      "title": "Journal Papers Support | Lord-Tech",
+      "words": 852,
+      "menuLabel": "Journal Papers"
+    },
+    {
+      "active": "Also Do This",
+      "description": "Turn a body of literature into a considered account of what is known, where findings differ and what remains unresolved.",
+      "footers": 1,
+      "h1": [
+        "Review Article"
+      ],
+      "headers": 1,
+      "menuClosed": true,
+      "overflow": false,
+      "path": "/review-article",
+      "scroll": 0,
+      "title": "Review Article Support | Lord-Tech",
+      "words": 847,
+      "menuLabel": "Review Article"
+    },
+    {
+      "active": "Also Do This",
+      "description": "Communicate the contribution of a completed investigation through a focused empirical manuscript.",
+      "footers": 1,
+      "h1": [
+        "Empirical Article"
+      ],
+      "headers": 1,
+      "menuClosed": true,
+      "overflow": false,
+      "path": "/empirical-article",
+      "scroll": 0,
+      "title": "Empirical Article Support | Lord-Tech",
+      "words": 830,
+      "menuLabel": "Empirical Article"
+    },
+    {
+      "active": "Also Do This",
+      "description": "Present a technical contribution with a clear problem, reproducible method and proportionate interpretation of performance.",
+      "footers": 1,
+      "h1": [
+        "Technical Article"
+      ],
+      "headers": 1,
+      "menuClosed": true,
+      "overflow": false,
+      "path": "/technical-article",
+      "scroll": 0,
+      "title": "Technical Article Support | Lord-Tech",
+      "words": 850,
+      "menuLabel": "Technical Article"
+    },
+    {
+      "active": "Also Do This",
+      "description": "Find focused support for the publication and presentation tasks that sit alongside article development.",
+      "footers": 1,
+      "h1": [
+        "Other Publication Services"
+      ],
+      "headers": 1,
+      "menuClosed": true,
+      "overflow": false,
+      "path": "/publication-services",
+      "scroll": 0,
+      "title": "Other Publication Services Support | Lord-Tech",
+      "words": 479,
+      "menuLabel": "Other Services"
+    },
+    {
+      "active": "Also Do This",
+      "description": "Prepare a technically clear manuscript for an appropriate journal or conference, with attention to structure, references and submission requirements.",
+      "footers": 1,
+      "h1": [
+        "IEEE / Scopus Paper Support"
+      ],
+      "headers": 1,
+      "menuClosed": true,
+      "overflow": false,
+      "path": "/ieee-papers",
+      "scroll": 0,
+      "title": "IEEE / Scopus Paper Support Support | Lord-Tech",
+      "words": 870,
+      "menuLabel": "IEEE / Scopus Paper Support"
+    },
+    {
+      "active": "Also Do This",
+      "description": "Present your research identity with a clear, accurate account of your work.",
+      "footers": 1,
+      "h1": [
+        "Researcher Profile Enhancement"
+      ],
+      "headers": 1,
+      "menuClosed": true,
+      "overflow": false,
+      "path": "/researcher-profile-enhancement",
+      "scroll": 0,
+      "title": "Researcher Profile Enhancement Support | Lord-Tech",
+      "words": 873,
+      "menuLabel": "Researcher Profile Enhancement"
+    },
+    {
+      "active": "Also Do This",
+      "description": "Research-focused patent support covering prior-art analysis, technical documentation and coordination with qualified patent professionals.",
+      "footers": 1,
+      "h1": [
+        "Protect Your Research: Patent Support & Consulting"
+      ],
+      "headers": 1,
+      "menuClosed": true,
+      "overflow": false,
+      "path": "/services/patent-support-and-consulting",
+      "scroll": 0,
+      "title": "Patent Support and Consulting | Lord-Tech Datus Thesis",
+      "words": 858,
+      "menuLabel": "Patent Support and Consulting"
+    },
+    {
+      "active": "Also Do This",
+      "description": "Reshape a doctoral thesis into a book project for a clearly defined readership.",
+      "footers": 1,
+      "h1": [
+        "PhD Thesis to Book Publication"
+      ],
+      "headers": 1,
+      "menuClosed": true,
+      "overflow": false,
+      "path": "/phd-thesis-to-book-publication",
+      "scroll": 0,
+      "title": "PhD Thesis to Book Publication Support | Lord-Tech",
+      "words": 883,
+      "menuLabel": "PhD Thesis to Book Publication"
+    },
+    {
+      "active": "Also Do This",
+      "description": "Plan how your research will be communicated and developed beyond the immediate thesis task.",
+      "footers": 1,
+      "h1": [
+        "Also Do This"
+      ],
+      "headers": 1,
+      "menuClosed": true,
+      "overflow": false,
+      "path": "/also-do-this",
+      "scroll": 0,
+      "title": "Also Do This Support | Lord-Tech",
+      "words": 502,
+      "menuLabel": "Explore Also Do This"
+    },
+    {
+      "active": "PhD Guide",
+      "description": "Get focused guidance on the reasoning and organisation that hold a research project together.",
+      "footers": 1,
+      "h1": [
+        "PhD Guide"
+      ],
+      "headers": 1,
+      "menuClosed": true,
+      "overflow": false,
+      "path": "/phd-guide",
+      "scroll": 0,
+      "title": "PhD Guide Support | Lord-Tech",
+      "words": 434,
+      "menuLabel": "PhD Guide"
+    },
+    {
+      "active": "PhD Guide",
+      "description": "Turn an uncertain research direction into a set of questions you can discuss and act on.",
+      "footers": 1,
+      "h1": [
+        "Thought Clearing"
+      ],
+      "headers": 1,
+      "menuClosed": true,
+      "overflow": false,
+      "path": "/thought-clearing",
+      "scroll": 0,
+      "title": "Thought Clearing Support | Lord-Tech",
+      "words": 846,
+      "menuLabel": "Thought Clearing"
+    },
+    {
+      "active": "PhD Guide",
+      "description": "Strengthen the organisation and reasoning of a research manuscript before concentrating on sentence-level polish.",
+      "footers": 1,
+      "h1": [
+        "Development Editing"
+      ],
+      "headers": 1,
+      "menuClosed": true,
+      "overflow": false,
+      "path": "/development-editing",
+      "scroll": 0,
+      "title": "Development Editing Support | Lord-Tech",
+      "words": 831,
+      "menuLabel": "Development Editing"
+    },
+    {
+      "active": "PhD Guide",
+      "description": "Create a research design that connects your question to a credible form of evidence.",
+      "footers": 1,
+      "h1": [
+        "Research Design"
+      ],
+      "headers": 1,
+      "menuClosed": true,
+      "overflow": false,
+      "path": "/research-design",
+      "scroll": 0,
+      "title": "Research Design Support | Lord-Tech",
+      "words": 848,
+      "menuLabel": "Research Design"
+    },
+    {
+      "active": "PhD Guide",
+      "description": "Get focused guidance on the reasoning and organisation that hold a research project together.",
+      "footers": 1,
+      "h1": [
+        "PhD Guide"
+      ],
+      "headers": 1,
+      "menuClosed": true,
+      "overflow": false,
+      "path": "/phd-guide",
+      "scroll": 0,
+      "title": "PhD Guide Support | Lord-Tech",
+      "words": 434,
+      "menuLabel": "Explore PhD Guide"
+    }
+  ],
+  "mobileChecks": [
+    {
+      "contactTargets": [
+        {
+          "height": 44,
+          "href": "tel:+918077281918"
+        },
+        {
+          "height": 44,
+          "href": "tel:+919319250172"
+        }
+      ],
+      "footers": 1,
+      "headers": 1,
+      "overflow": false,
+      "path": "/where-to-start",
+      "sidebarMobile": "grid"
+    },
+    {
+      "contactTargets": [
+        {
+          "height": 44,
+          "href": "tel:+918077281918"
+        },
+        {
+          "height": 44,
+          "href": "tel:+919319250172"
+        }
+      ],
+      "footers": 1,
+      "headers": 1,
+      "overflow": false,
+      "path": "/services/phd-admission-assistance",
+      "sidebarMobile": null
+    },
+    {
+      "contactTargets": [
+        {
+          "height": 44,
+          "href": "tel:+918077281918"
+        },
+        {
+          "height": 44,
+          "href": "tel:+919319250172"
+        }
+      ],
+      "footers": 1,
+      "headers": 1,
+      "overflow": false,
+      "path": "/services/fast-track-phd-by-research-publication",
+      "sidebarMobile": null
+    },
+    {
+      "contactTargets": [
+        {
+          "height": 44,
+          "href": "tel:+918077281918"
+        },
+        {
+          "height": 44,
+          "href": "tel:+919319250172"
+        }
+      ],
+      "footers": 1,
+      "headers": 1,
+      "overflow": false,
+      "path": "/services/phd-embarking-the-journey",
+      "sidebarMobile": null
+    },
+    {
+      "contactTargets": [
+        {
+          "height": 44,
+          "href": "tel:+918077281918"
+        },
+        {
+          "height": 44,
+          "href": "tel:+919319250172"
+        }
+      ],
+      "footers": 1,
+      "headers": 1,
+      "overflow": false,
+      "path": "/services/topic-and-research-proposal",
+      "sidebarMobile": null
+    },
+    {
+      "contactTargets": [
+        {
+          "height": 44,
+          "href": "tel:+918077281918"
+        },
+        {
+          "height": 44,
+          "href": "tel:+919319250172"
+        }
+      ],
+      "footers": 1,
+      "headers": 1,
+      "overflow": false,
+      "path": "/services/problem-statement",
+      "sidebarMobile": null
+    },
+    {
+      "contactTargets": [
+        {
+          "height": 44,
+          "href": "tel:+918077281918"
+        },
+        {
+          "height": 44,
+          "href": "tel:+919319250172"
+        }
+      ],
+      "footers": 1,
+      "headers": 1,
+      "overflow": false,
+      "path": "/services/base-papers",
+      "sidebarMobile": null
+    },
+    {
+      "contactTargets": [
+        {
+          "height": 44,
+          "href": "tel:+918077281918"
+        },
+        {
+          "height": 44,
+          "href": "tel:+919319250172"
+        }
+      ],
+      "footers": 1,
+      "headers": 1,
+      "overflow": false,
+      "path": "/services/patent-support-and-consulting",
+      "sidebarMobile": null
+    },
+    {
+      "contactTargets": [
+        {
+          "height": 44,
+          "href": "tel:+918077281918"
+        },
+        {
+          "height": 44,
+          "href": "tel:+919319250172"
+        }
+      ],
+      "footers": 1,
+      "headers": 1,
+      "overflow": false,
+      "path": "/implementation",
+      "sidebarMobile": "grid"
+    },
+    {
+      "contactTargets": [
+        {
+          "height": 44,
+          "href": "tel:+918077281918"
+        },
+        {
+          "height": 44,
+          "href": "tel:+919319250172"
+        }
+      ],
+      "footers": 1,
+      "headers": 1,
+      "overflow": false,
+      "path": "/services/matlab-projects",
+      "sidebarMobile": null
+    },
+    {
+      "contactTargets": [
+        {
+          "height": 44,
+          "href": "tel:+918077281918"
+        },
+        {
+          "height": 44,
+          "href": "tel:+919319250172"
+        }
+      ],
+      "footers": 1,
+      "headers": 1,
+      "overflow": false,
+      "path": "/services/simulink-projects",
+      "sidebarMobile": null
+    },
+    {
+      "contactTargets": [
+        {
+          "height": 44,
+          "href": "tel:+918077281918"
+        },
+        {
+          "height": 44,
+          "href": "tel:+919319250172"
+        }
+      ],
+      "footers": 1,
+      "headers": 1,
+      "overflow": false,
+      "path": "/services/python-projects",
+      "sidebarMobile": null
+    },
+    {
+      "contactTargets": [
+        {
+          "height": 44,
+          "href": "tel:+918077281918"
+        },
+        {
+          "height": 44,
+          "href": "tel:+919319250172"
+        }
+      ],
+      "footers": 1,
+      "headers": 1,
+      "overflow": false,
+      "path": "/services/java-projects",
+      "sidebarMobile": null
+    },
+    {
+      "contactTargets": [
+        {
+          "height": 44,
+          "href": "tel:+918077281918"
+        },
+        {
+          "height": 44,
+          "href": "tel:+919319250172"
+        }
+      ],
+      "footers": 1,
+      "headers": 1,
+      "overflow": false,
+      "path": "/services/ansys-projects",
+      "sidebarMobile": null
+    },
+    {
+      "contactTargets": [
+        {
+          "height": 44,
+          "href": "tel:+918077281918"
+        },
+        {
+          "height": 44,
+          "href": "tel:+919319250172"
+        }
+      ],
+      "footers": 1,
+      "headers": 1,
+      "overflow": false,
+      "path": "/analysis",
+      "sidebarMobile": "grid"
+    },
+    {
+      "contactTargets": [
+        {
+          "height": 44,
+          "href": "tel:+918077281918"
+        },
+        {
+          "height": 44,
+          "href": "tel:+919319250172"
+        }
+      ],
+      "footers": 1,
+      "headers": 1,
+      "overflow": false,
+      "path": "/qualitative-data-analysis",
+      "sidebarMobile": "grid"
+    },
+    {
+      "contactTargets": [
+        {
+          "height": 44,
+          "href": "tel:+918077281918"
+        },
+        {
+          "height": 44,
+          "href": "tel:+919319250172"
+        }
+      ],
+      "footers": 1,
+      "headers": 1,
+      "overflow": false,
+      "path": "/quantitative-data-analysis",
+      "sidebarMobile": "grid"
+    },
+    {
+      "contactTargets": [
+        {
+          "height": 44,
+          "href": "tel:+918077281918"
+        },
+        {
+          "height": 44,
+          "href": "tel:+919319250172"
+        }
+      ],
+      "footers": 1,
+      "headers": 1,
+      "overflow": false,
+      "path": "/other-services",
+      "sidebarMobile": "grid"
+    },
+    {
+      "contactTargets": [
+        {
+          "height": 44,
+          "href": "tel:+918077281918"
+        },
+        {
+          "height": 44,
+          "href": "tel:+919319250172"
+        }
+      ],
+      "footers": 1,
+      "headers": 1,
+      "overflow": false,
+      "path": "/chapters-writing",
+      "sidebarMobile": "grid"
+    },
+    {
+      "contactTargets": [
+        {
+          "height": 44,
+          "href": "tel:+918077281918"
+        },
+        {
+          "height": 44,
+          "href": "tel:+919319250172"
+        }
+      ],
+      "footers": 1,
+      "headers": 1,
+      "overflow": false,
+      "path": "/questionnaire-and-experiments",
+      "sidebarMobile": "grid"
+    },
+    {
+      "contactTargets": [
+        {
+          "height": 44,
+          "href": "tel:+918077281918"
+        },
+        {
+          "height": 44,
+          "href": "tel:+919319250172"
+        }
+      ],
+      "footers": 1,
+      "headers": 1,
+      "overflow": false,
+      "path": "/humanise-ai-academic-content",
+      "sidebarMobile": "grid"
+    },
+    {
+      "contactTargets": [
+        {
+          "height": 44,
+          "href": "tel:+918077281918"
+        },
+        {
+          "height": 44,
+          "href": "tel:+919319250172"
+        }
+      ],
+      "footers": 1,
+      "headers": 1,
+      "overflow": false,
+      "path": "/moving-along",
+      "sidebarMobile": "grid"
+    },
+    {
+      "contactTargets": [
+        {
+          "height": 44,
+          "href": "tel:+918077281918"
+        },
+        {
+          "height": 44,
+          "href": "tel:+919319250172"
+        }
+      ],
+      "footers": 1,
+      "headers": 1,
+      "overflow": false,
+      "path": "/finishing-up",
+      "sidebarMobile": "grid"
+    },
+    {
+      "contactTargets": [
+        {
+          "height": 44,
+          "href": "tel:+918077281918"
+        },
+        {
+          "height": 44,
+          "href": "tel:+919319250172"
+        }
+      ],
+      "footers": 1,
+      "headers": 1,
+      "overflow": false,
+      "path": "/editing",
+      "sidebarMobile": "grid"
+    },
+    {
+      "contactTargets": [
+        {
+          "height": 44,
+          "href": "tel:+918077281918"
+        },
+        {
+          "height": 44,
+          "href": "tel:+919319250172"
+        }
+      ],
+      "footers": 1,
+      "headers": 1,
+      "overflow": false,
+      "path": "/formatting",
+      "sidebarMobile": "grid"
+    },
+    {
+      "contactTargets": [
+        {
+          "height": 44,
+          "href": "tel:+918077281918"
+        },
+        {
+          "height": 44,
+          "href": "tel:+919319250172"
+        }
+      ],
+      "footers": 1,
+      "headers": 1,
+      "overflow": false,
+      "path": "/journal-papers",
+      "sidebarMobile": "grid"
+    },
+    {
+      "contactTargets": [
+        {
+          "height": 44,
+          "href": "tel:+918077281918"
+        },
+        {
+          "height": 44,
+          "href": "tel:+919319250172"
+        }
+      ],
+      "footers": 1,
+      "headers": 1,
+      "overflow": false,
+      "path": "/review-article",
+      "sidebarMobile": "grid"
+    },
+    {
+      "contactTargets": [
+        {
+          "height": 44,
+          "href": "tel:+918077281918"
+        },
+        {
+          "height": 44,
+          "href": "tel:+919319250172"
+        }
+      ],
+      "footers": 1,
+      "headers": 1,
+      "overflow": false,
+      "path": "/empirical-article",
+      "sidebarMobile": "grid"
+    },
+    {
+      "contactTargets": [
+        {
+          "height": 44,
+          "href": "tel:+918077281918"
+        },
+        {
+          "height": 44,
+          "href": "tel:+919319250172"
+        }
+      ],
+      "footers": 1,
+      "headers": 1,
+      "overflow": false,
+      "path": "/technical-article",
+      "sidebarMobile": "grid"
+    },
+    {
+      "contactTargets": [
+        {
+          "height": 44,
+          "href": "tel:+918077281918"
+        },
+        {
+          "height": 44,
+          "href": "tel:+919319250172"
+        }
+      ],
+      "footers": 1,
+      "headers": 1,
+      "overflow": false,
+      "path": "/publication-services",
+      "sidebarMobile": "grid"
+    },
+    {
+      "contactTargets": [
+        {
+          "height": 44,
+          "href": "tel:+918077281918"
+        },
+        {
+          "height": 44,
+          "href": "tel:+919319250172"
+        }
+      ],
+      "footers": 1,
+      "headers": 1,
+      "overflow": false,
+      "path": "/ieee-papers",
+      "sidebarMobile": "grid"
+    },
+    {
+      "contactTargets": [
+        {
+          "height": 44,
+          "href": "tel:+918077281918"
+        },
+        {
+          "height": 44,
+          "href": "tel:+919319250172"
+        }
+      ],
+      "footers": 1,
+      "headers": 1,
+      "overflow": false,
+      "path": "/researcher-profile-enhancement",
+      "sidebarMobile": "grid"
+    },
+    {
+      "contactTargets": [
+        {
+          "height": 44,
+          "href": "tel:+918077281918"
+        },
+        {
+          "height": 44,
+          "href": "tel:+919319250172"
+        }
+      ],
+      "footers": 1,
+      "headers": 1,
+      "overflow": false,
+      "path": "/phd-thesis-to-book-publication",
+      "sidebarMobile": "grid"
+    },
+    {
+      "contactTargets": [
+        {
+          "height": 44,
+          "href": "tel:+918077281918"
+        },
+        {
+          "height": 44,
+          "href": "tel:+919319250172"
+        }
+      ],
+      "footers": 1,
+      "headers": 1,
+      "overflow": false,
+      "path": "/also-do-this",
+      "sidebarMobile": "grid"
+    },
+    {
+      "contactTargets": [
+        {
+          "height": 44,
+          "href": "tel:+918077281918"
+        },
+        {
+          "height": 44,
+          "href": "tel:+919319250172"
+        }
+      ],
+      "footers": 1,
+      "headers": 1,
+      "overflow": false,
+      "path": "/phd-guide",
+      "sidebarMobile": "grid"
+    },
+    {
+      "contactTargets": [
+        {
+          "height": 44,
+          "href": "tel:+918077281918"
+        },
+        {
+          "height": 44,
+          "href": "tel:+919319250172"
+        }
+      ],
+      "footers": 1,
+      "headers": 1,
+      "overflow": false,
+      "path": "/thought-clearing",
+      "sidebarMobile": "grid"
+    },
+    {
+      "contactTargets": [
+        {
+          "height": 44,
+          "href": "tel:+918077281918"
+        },
+        {
+          "height": 44,
+          "href": "tel:+919319250172"
+        }
+      ],
+      "footers": 1,
+      "headers": 1,
+      "overflow": false,
+      "path": "/development-editing",
+      "sidebarMobile": "grid"
+    },
+    {
+      "contactTargets": [
+        {
+          "height": 44,
+          "href": "tel:+918077281918"
+        },
+        {
+          "height": 44,
+          "href": "tel:+919319250172"
+        }
+      ],
+      "footers": 1,
+      "headers": 1,
+      "overflow": false,
+      "path": "/research-design",
+      "sidebarMobile": "grid"
+    },
+    {
+      "contactTargets": [
+        {
+          "height": 44,
+          "href": "tel:+918077281918"
+        },
+        {
+          "height": 44,
+          "href": "tel:+919319250172"
+        },
+        {
+          "height": 44,
+          "href": "tel:+918077281918"
+        },
+        {
+          "height": 44,
+          "href": "tel:+919319250172"
+        }
+      ],
+      "footers": 1,
+      "headers": 1,
+      "overflow": false,
+      "path": "/contact",
+      "sidebarMobile": null
+    },
+    {
+      "contactTargets": [
+        {
+          "height": 44,
+          "href": "tel:+918077281918"
+        },
+        {
+          "height": 44,
+          "href": "tel:+919319250172"
+        },
+        {
+          "height": 44,
+          "href": "tel:+918077281918"
+        },
+        {
+          "height": 44,
+          "href": "tel:+919319250172"
+        }
+      ],
+      "footers": 1,
+      "headers": 1,
+      "overflow": false,
+      "path": "/",
+      "sidebarMobile": null
+    }
+  ],
+  "footerChecks": [
+    {
+      "path": "/services/topic-and-research-proposal",
+      "actual": "/services/topic-and-research-proposal"
+    },
+    {
+      "path": "/research-design",
+      "actual": "/research-design"
+    },
+    {
+      "path": "/questionnaire-and-experiments",
+      "actual": "/questionnaire-and-experiments"
+    },
+    {
+      "path": "/analysis",
+      "actual": "/analysis"
+    },
+    {
+      "path": "/chapters-writing",
+      "actual": "/chapters-writing"
+    },
+    {
+      "path": "/services/matlab-projects",
+      "actual": "/services/matlab-projects"
+    },
+    {
+      "path": "/services/python-projects",
+      "actual": "/services/python-projects"
+    },
+    {
+      "path": "/services/java-projects",
+      "actual": "/services/java-projects"
+    },
+    {
+      "path": "/services/ansys-projects",
+      "actual": "/services/ansys-projects"
+    },
+    {
+      "path": "/services/simulink-projects",
+      "actual": "/services/simulink-projects"
+    },
+    {
+      "path": "/review-article",
+      "actual": "/review-article"
+    },
+    {
+      "path": "/empirical-article",
+      "actual": "/empirical-article"
+    },
+    {
+      "path": "/ieee-papers",
+      "actual": "/ieee-papers"
+    },
+    {
+      "path": "/editing",
+      "actual": "/editing"
+    },
+    {
+      "path": "/formatting",
+      "actual": "/formatting"
+    }
+  ],
+  "aliasChecks": [
+    {
+      "path": "/phd-admission-assistance",
+      "actual": "/services/phd-admission-assistance",
+      "expected": "/services/phd-admission-assistance"
+    },
+    {
+      "path": "/fast-track-phd-by-research-publication",
+      "actual": "/services/fast-track-phd-by-research-publication",
+      "expected": "/services/fast-track-phd-by-research-publication"
+    },
+    {
+      "path": "/phd-embarking-the-journey",
+      "actual": "/services/phd-embarking-the-journey",
+      "expected": "/services/phd-embarking-the-journey"
+    },
+    {
+      "path": "/topic-and-research-proposal",
+      "actual": "/services/topic-and-research-proposal",
+      "expected": "/services/topic-and-research-proposal"
+    },
+    {
+      "path": "/problem-statement",
+      "actual": "/services/problem-statement",
+      "expected": "/services/problem-statement"
+    },
+    {
+      "path": "/base-papers",
+      "actual": "/services/base-papers",
+      "expected": "/services/base-papers"
+    },
+    {
+      "path": "/patent-support-and-consulting",
+      "actual": "/services/patent-support-and-consulting",
+      "expected": "/services/patent-support-and-consulting"
+    },
+    {
+      "path": "/matlab-projects",
+      "actual": "/services/matlab-projects",
+      "expected": "/services/matlab-projects"
+    },
+    {
+      "path": "/simulink-projects",
+      "actual": "/services/simulink-projects",
+      "expected": "/services/simulink-projects"
+    },
+    {
+      "path": "/python-projects",
+      "actual": "/services/python-projects",
+      "expected": "/services/python-projects"
+    },
+    {
+      "path": "/java-projects",
+      "actual": "/services/java-projects",
+      "expected": "/services/java-projects"
+    },
+    {
+      "path": "/ansys-projects",
+      "actual": "/services/ansys-projects",
+      "expected": "/services/ansys-projects"
+    }
+  ]
+}

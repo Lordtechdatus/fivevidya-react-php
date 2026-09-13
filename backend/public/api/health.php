@@ -2,6 +2,6 @@
 header('Content-Type: application/json; charset=utf-8');
 echo json_encode([
   'ok' => true,
-  'service' => 'Lord-Tech Datus Thesis PHP API',
+  'service' => 'AcademicEdge Writing & Publication Services PHP API',
   'time' => gmdate('c')
 ]);

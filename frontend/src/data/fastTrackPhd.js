@@ -1,0 +1,47 @@
+export const fastTrackPath = '/services/fast-track-phd-by-research-publication';
+export const fastTrackData = {
+  title: 'Fast-Track PhD by Research Publication',
+  description: 'Explore a structured publication-based doctoral support pathway for experienced professionals, with research mentoring, portfolio review, synthesis report guidance and viva preparation.',
+  highlights: ['Approx. 6-month structured pathway', 'Research publication based', 'Designed for working professionals', 'International academic pathway'],
+  features: [
+    { title: 'International academic recognition', icon: 'graduate', text: 'Explore publication-based routes at recognised awarding institutions. Recognition of a particular degree must be checked for your country and intended use.' },
+    { title: 'Faster structured pathway', icon: 'compass', text: 'Organise suitable existing research into clear milestones. A focused support schedule helps you prepare efficiently, subject to institutional timelines.' },
+    { title: 'Research publication support', icon: 'book', text: 'Receive feedback on your own manuscripts, journal fit and submission readiness while retaining authorship and responsibility for the research.' },
+    { title: 'Research report guidance', icon: 'file', text: 'Connect your articles through a critical synthesis that explains the shared question, methods and original contribution.' },
+    { title: 'Career-friendly remote process', icon: 'code', text: 'Arrange remote mentoring around professional commitments. Attendance and examination requirements depend on the awarding institution.' },
+    { title: 'Expert research mentoring', icon: 'bulb', text: 'Work through research positioning, revisions and viva preparation with focused feedback on the strengths and gaps in your portfolio.' },
+  ],
+  roadmap: [
+    { period: 'Month 1', title: 'Research Proposal & Alignment', text: 'Review your research background, assess pathway eligibility and align a proposal or portfolio plan with the institution’s requirements.' },
+    { period: 'Months 2–3', title: 'Article Development & Research Mentoring', text: 'Refine your own research articles through mentoring, evidence checks and constructive review. Confirm how prior work can contribute.' },
+    { period: 'Month 4', title: 'Journal Submission & Research Report Development', text: 'Prepare eligible manuscripts for submission and begin the synthesis report. Journal review and acceptance follow independent schedules.' },
+    { period: 'Month 5', title: 'Final Research Report & Viva Preparation', text: 'Review the report’s coherence, document your contribution and practise explaining your research decisions and findings.' },
+    { period: 'Month 6', title: 'Final Submission / Completion Process', text: 'Check readiness and prepare the final submission where institutional conditions are met. Examination, corrections and degree award may follow later.' },
+  ],
+  requirements: [
+    { title: 'Research proposal', icon: 'compass', text: 'A focused outline of your research question, context and contribution, in the format requested by the institution.' },
+    { title: 'Three research articles', icon: 'book', text: 'An indicative planning portfolio of three related articles. The required number, quality and authorship evidence must be confirmed with the awarding institution.' },
+    { title: 'Publication/journal requirements', icon: 'badge', text: 'Evidence of publication status and suitable peer review. Institutional rules determine whether accepted, published or other work is eligible.' },
+    { title: 'Synthesizing research report', icon: 'file', text: 'Your own critical account connecting the publications, explaining methods, limitations and the contribution to knowledge.' },
+    { title: 'Viva voce preparation', icon: 'graduate', text: 'Preparation to defend your work, clarify your individual contribution and respond to examiner questions where an oral examination is required.' },
+  ],
+  fees: [
+    { title: 'Institute Fee', price: 'Contact for Pricing', scope: 'Registration, academic supervision and examination charges as specified by the awarding institution.', note: 'Confirm the institution’s official fee schedule and payment terms.' },
+    { title: 'Research Publication & Report Support', price: 'Contact for Pricing', scope: 'Agreed mentoring, manuscript review, synthesis report feedback and viva preparation support.', note: 'Journal charges, additional revisions and other costs are included only if expressly stated in your quotation.' },
+  ],
+  faqs: [
+    ['Is a PhD by publication a recognised degree?', 'Some recognised universities offer doctoral routes based on published research. Recognition depends on the specific awarding institution, programme and jurisdiction. Check acceptance with the relevant authority or employer before enrolling.'],
+    ['Who may be eligible for this pathway?', 'Experienced professionals and researchers with a coherent body of original work may be suitable. Prior qualifications, research experience and any institutional affiliation requirements vary by university.'],
+    ['Are three research articles always required?', 'No. Three articles is the indicative portfolio used for this support plan, not a universal doctoral requirement. The institution determines the necessary volume, quality, authorship and publication status.'],
+    ['What publication and journal standards apply?', 'Follow the awarding institution’s rules on peer review, journal suitability and accepted or published work. Journal submission alone does not establish eligibility, and acceptance cannot be guaranteed.'],
+    ['What is the purpose of the research report?', 'The synthesis report shows how your publications form a connected research contribution. It critically discusses context, methods, findings, limitations and your own role rather than simply repeating the articles.'],
+    ['Can I complete the doctorate in six months?', 'The six-month roadmap is an indicative support schedule for suitably prepared applicants. It is not a promised degree completion time. University registration periods, peer review, examination and corrections can extend the overall process.'],
+    ['How do I check accreditation and degree-awarding status?', 'Request the institution’s exact legal name, programme regulations and awarding authority. Verify these with the official higher-education register in its jurisdiction and check recognition in the country where you intend to use the degree.'],
+    ['What fees should I plan for?', 'Institute fees and our publication/report support fees are quoted separately. Ask for an itemised scope covering payment terms, journal charges, examination fees and any additional costs before committing.'],
+    ['Can I use publications I already have?', 'Prior publications may be central to a published-work route, subject to rules on dates, relevance and authorship. Other doctoral formats include papers developed during registration. Confirm which route the institution actually offers.'],
+    ['Will I need to attend a viva voce?', 'An oral defence may form part of the assessment. Its format, location and scheduling are set by the institution. Mentoring can help you explain your contribution and respond to critical questions.'],
+    ['Can I continue working while preparing my portfolio?', 'Our guidance can be organised remotely around agreed milestones. You should separately confirm the university’s study mode, attendance requirements and expected research commitment.'],
+    ['How do I start the application process?', 'Enquire with a summary of your qualifications, professional experience and publications. Begin with an eligibility and portfolio discussion, then verify the institution, academic requirements, fees and timeline before applying.'],
+  ],
+  sources: [{ label: 'University of Portsmouth: PhD by publication', href: 'https://www.port.ac.uk/study/postgraduate-research/research-degrees/phd-by-publication' }],
+};

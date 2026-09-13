@@ -1,0 +1,28 @@
+.fast-track-page .ft-subheading { font-size: 20px; line-height: 1.55; color: var(--teal-dark); }
+.fast-track-page .ft-card { transition: border-color .2s ease, box-shadow .2s ease; }
+.fast-track-page .ft-card:hover { border-color: #91c4b9; box-shadow: 0 8px 20px rgb(7 90 90 / 7%); }
+.fast-track-page .ft-card p:last-child { margin-bottom: 0; }
+.fast-track-page .ft-explainer { display: grid; grid-template-columns: 1.3fr .8fr; gap: 52px; align-items: start; }
+.fast-track-page .ft-principle { border-top: 3px solid var(--teal); background: #f5f9f7; }
+.fast-track-page .ft-roadmap { list-style: none; padding: 0; margin: 0; }
+.fast-track-page .ft-roadmap li { display: grid; grid-template-columns: 58px 155px 1fr; gap: 24px; position: relative; padding: 0 0 38px; }
+.fast-track-page .ft-roadmap li:not(:last-child)::before { content: ''; position: absolute; left: 27px; top: 56px; bottom: 0; width: 2px; background: #d8e8e2; }
+.fast-track-page .ft-roadmap li:last-child { padding-bottom: 0; }
+.fast-track-page .ft-milestone { width: 56px; height: 56px; display: grid; place-items: center; border: 1px solid #c4ddd4; background: #edf6f1; color: var(--teal-dark); border-radius: 50%; font-weight: 750; }
+.fast-track-page .ft-period { padding-top: 13px; color: var(--teal-dark); font-weight: 750; }
+.fast-track-page .ft-roadmap h3 { margin: 10px 0 12px; }
+.fast-track-page .ft-roadmap p { margin-bottom: 0; max-width: 740px; }
+.fast-track-page .ft-fees th:nth-child(2) { width: 48%; }
+.fast-track-page .ft-fees td { vertical-align: top; }
+.fast-track-page .ft-fees p:last-child { margin-bottom: 0; }
+.fast-track-page .ft-price { display: block; color: var(--teal-dark); margin-bottom: 16px; }
+@media (max-width: 767px) {
+  .fast-track-page .ft-subheading { font-size: 18px; }
+  .fast-track-page .ft-explainer { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .fast-track-page .ft-roadmap li { grid-template-columns: 46px minmax(0, 1fr); gap: 8px 16px; padding-bottom: 30px; }
+  .fast-track-page .ft-milestone { width: 44px; height: 44px; grid-row: span 2; }
+  .fast-track-page .ft-roadmap li:not(:last-child)::before { left: 21px; top: 44px; }
+  .fast-track-page .ft-roadmap li > div:last-child { grid-column: 2; }
+  .fast-track-page .ft-period { padding-top: 7px; }
+  .fast-track-page .ft-roadmap h3 { margin-top: 0; }
+}

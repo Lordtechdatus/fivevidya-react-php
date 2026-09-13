@@ -1,96 +1,48 @@
 <?php
-// Local demo enquiry endpoint for the React frontend.
-// It stores submissions in backend/storage/submissions.ndjson.
+declare(strict_types=1);
 
-$origin = $_SERVER['HTTP_ORIGIN'] ?? '';
-$allowedOrigins = [
-    'http://localhost:5173',
-    'http://127.0.0.1:5173',
-    'http://localhost:8000',
-    'http://127.0.0.1:8000',
+require_once __DIR__ . '/../../includes/bootstrap.php';
+require_once __DIR__ . '/../../includes/repositories.php';
+require_once __DIR__ . '/../../services/WhatsAppService.php';
+
+ae_apply_cors();
+if (($_SERVER['REQUEST_METHOD'] ?? '') !== 'POST') {
+    ae_error('POST requests only.', 405);
+}
+ae_rate_limit('submit');
+
+$data = ae_request_json();
+$payload = [
+    'name' => ae_clean_text($data['name'] ?? '', 150),
+    'email' => ae_clean_text($data['email'] ?? '', 190),
+    'phone' => ae_clean_text($data['phone'] ?? '', 30),
+    'service' => ae_clean_text($data['service'] ?? '', 190),
+    'subject' => ae_clean_text($data['subject'] ?? '', 255),
+    'message' => ae_clean_text($data['message'] ?? ($data['requirement'] ?? ''), 5000),
+    'source' => ae_clean_text($data['source'] ?? 'website', 100),
 ];
 
-if (in_array($origin, $allowedOrigins, true)) {
-    header('Access-Control-Allow-Origin: ' . $origin);
-    header('Vary: Origin');
+$errors = [];
+if ($payload['name'] === '') $errors['name'] = 'Name is required.';
+if ($payload['email'] === '' || !filter_var($payload['email'], FILTER_VALIDATE_EMAIL)) $errors['email'] = 'Valid email is required.';
+if ($payload['message'] === '') $errors['message'] = 'Message is required.';
+if ($errors) ae_error('Please correct the highlighted fields.', 422, $errors);
+
+try {
+    $id = ae_insert_contact($payload);
+    try {
+        (new WhatsAppService())->notifyNewEnquiry($payload, $id, 'enquiry');
+    } catch (Throwable $exception) {
+        ae_log('whatsapp', 'WhatsApp legacy submit notification failed.', ['error' => $exception->getMessage(), 'enquiry_id' => $id]);
+    }
+    ae_success(['id' => $id, 'enquiry_id' => $id], 'Your enquiry has been submitted successfully.');
+} catch (Throwable $exception) {
+    ae_log('application', 'Database submit failed; using legacy NDJSON fallback.', ['error' => $exception->getMessage()]);
+    try {
+        $fallbackId = ae_save_legacy_submission($payload + ['ip' => $_SERVER['REMOTE_ADDR'] ?? null]);
+        ae_success(['id' => $fallbackId], 'Your enquiry has been submitted successfully.');
+    } catch (Throwable $fallbackException) {
+        ae_log('application', 'Legacy submit fallback failed.', ['error' => $fallbackException->getMessage()]);
+        ae_error('Unable to submit your enquiry. Please try again.', 500);
+    }
 }
-header('Access-Control-Allow-Headers: Content-Type');
-header('Access-Control-Allow-Methods: POST, OPTIONS');
-header('Content-Type: application/json; charset=utf-8');
-
-if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
-    http_response_code(204);
-    exit;
-}
-
-if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    http_response_code(405);
-    echo json_encode(['ok' => false, 'message' => 'POST requests only.']);
-    exit;
-}
-
-$raw = file_get_contents('php://input');
-$data = json_decode($raw, true);
-if (!is_array($data)) {
-    http_response_code(400);
-    echo json_encode(['ok' => false, 'message' => 'Invalid JSON request.']);
-    exit;
-}
-
-function clean_text($value, $max = 4000) {
-    $value = is_string($value) ? trim($value) : '';
-    $value = preg_replace('/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]/u', '', $value);
-    return function_exists('mb_substr') ? mb_substr($value, 0, $max) : substr($value, 0, $max);
-}
-
-$name = clean_text($data['name'] ?? '', 120);
-$email = clean_text($data['email'] ?? '', 190);
-$phone = clean_text($data['phone'] ?? '', 60);
-$service = clean_text($data['service'] ?? '', 160);
-$message = clean_text($data['message'] ?? '', 4000);
-$source = clean_text($data['source'] ?? 'website', 80);
-
-if ($name === '' || $email === '' || $message === '') {
-    http_response_code(422);
-    echo json_encode(['ok' => false, 'message' => 'Name, email and research requirement are required.']);
-    exit;
-}
-
-if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    http_response_code(422);
-    echo json_encode(['ok' => false, 'message' => 'Please enter a valid email address.']);
-    exit;
-}
-
-$record = [
-    'id' => bin2hex(random_bytes(8)),
-    'created_at' => gmdate('c'),
-    'name' => $name,
-    'email' => $email,
-    'phone' => $phone,
-    'service' => $service,
-    'message' => $message,
-    'source' => $source,
-    'ip' => $_SERVER['REMOTE_ADDR'] ?? null,
-];
-
-$storageDir = dirname(__DIR__, 2) . DIRECTORY_SEPARATOR . 'storage';
-if (!is_dir($storageDir) && !mkdir($storageDir, 0775, true) && !is_dir($storageDir)) {
-    http_response_code(500);
-    echo json_encode(['ok' => false, 'message' => 'Could not create storage directory.']);
-    exit;
-}
-
-$file = $storageDir . DIRECTORY_SEPARATOR . 'submissions.ndjson';
-$line = json_encode($record, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . PHP_EOL;
-if (file_put_contents($file, $line, FILE_APPEND | LOCK_EX) === false) {
-    http_response_code(500);
-    echo json_encode(['ok' => false, 'message' => 'Could not save the enquiry.']);
-    exit;
-}
-
-echo json_encode([
-    'ok' => true,
-    'message' => 'Request submitted successfully. The local PHP backend saved it.',
-    'id' => $record['id'],
-]);

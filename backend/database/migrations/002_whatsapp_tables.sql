@@ -1,0 +1,42 @@
+CREATE TABLE IF NOT EXISTS whatsapp_messages (
+    id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    enquiry_id BIGINT UNSIGNED NULL,
+    quote_request_id BIGINT UNSIGNED NULL,
+    direction VARCHAR(20) NOT NULL,
+    sender_phone VARCHAR(30) NULL,
+    recipient_phone VARCHAR(30) NULL,
+    message_type VARCHAR(50) DEFAULT 'text',
+    message_body TEXT NULL,
+    template_name VARCHAR(190) NULL,
+    meta_message_id VARCHAR(255) NULL,
+    status VARCHAR(50) DEFAULT 'queued',
+    error_code VARCHAR(100) NULL,
+    error_message TEXT NULL,
+    payload_json LONGTEXT NULL,
+    sent_at DATETIME NULL,
+    delivered_at DATETIME NULL,
+    read_at DATETIME NULL,
+    failed_at DATETIME NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    INDEX idx_wa_meta_message_id (meta_message_id),
+    INDEX idx_wa_recipient (recipient_phone),
+    INDEX idx_wa_status (status),
+    INDEX idx_wa_created_at (created_at),
+    CONSTRAINT fk_wa_enquiry FOREIGN KEY (enquiry_id) REFERENCES contact_enquiries(id) ON DELETE SET NULL,
+    CONSTRAINT fk_wa_quote FOREIGN KEY (quote_request_id) REFERENCES quote_requests(id) ON DELETE SET NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS whatsapp_webhook_events (
+    id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    event_type VARCHAR(100) NULL,
+    meta_message_id VARCHAR(255) NULL,
+    phone_number_id VARCHAR(255) NULL,
+    payload LONGTEXT NOT NULL,
+    processed TINYINT(1) NOT NULL DEFAULT 0,
+    processed_at DATETIME NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    INDEX idx_webhook_message (meta_message_id),
+    INDEX idx_webhook_processed (processed),
+    INDEX idx_webhook_created (created_at)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;

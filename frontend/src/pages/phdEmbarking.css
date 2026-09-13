@@ -1,0 +1,23 @@
+.journey-page .journey-lead { color: var(--teal-dark); font-size: 20px; line-height: 1.55; }
+.journey-page .journey-factor { border-top: 3px solid var(--teal); }
+.journey-page .journey-factor dl { margin: 24px 0 0; }
+.journey-page .journey-factor dl > div { padding: 15px 0; border-top: 1px solid #e3ebe7; }
+.journey-page .journey-factor dt { font-weight: 700; color: #304f4c; }
+.journey-page .journey-factor dd { margin: 6px 0 0; color: #606970; }
+.journey-page .journey-reflection { margin-top: 30px; padding: 24px 30px; background: #edf6f1; border-left: 3px solid var(--teal); }
+.journey-page .journey-reflection strong { color: var(--teal-dark); }
+.journey-page .journey-reflection p { margin: 8px 0 0; }
+.journey-page .journey-related .ad-card { display: flex; align-items: center; gap: 16px; }
+.journey-page .journey-related strong { font-size: 17px; line-height: 1.4; display: block; }
+.journey-page .journey-related small { color: #687571; display: block; font-size: 12px; margin-top: 5px; }
+.journey-page .journey-related a[aria-disabled="true"] { cursor: default; }
+.journey-page .ad-cta-inner > .btn { flex-shrink: 0; }
+.journey-page .lead-form label span { font-size: 14px; }
+.journey-page .lead-form :is(input, select, textarea) { min-height: 48px; font-size: 16px; }
+.journey-page .lead-form textarea { resize: vertical; }
+.journey-page .form-message { font-size: 14px; }
+@media (max-width: 767px) {
+  .journey-page .journey-lead { font-size: 18px; }
+  .journey-page .lead-form .form-grid { grid-template-columns: minmax(0, 1fr); }
+  .journey-page .journey-reflection { padding: 22px; }
+}

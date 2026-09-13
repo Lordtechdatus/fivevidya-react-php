@@ -1,0 +1,83 @@
+// Replace sample metrics, package scope and review examples with approved business data.
+export const admissionPath = '/services/phd-admission-assistance';
+export const phdAdmissionData = {
+  title: 'Apply for PhD Programs Across Leading International Universities',
+  description: 'Professional guidance for PhD university selection, faculty matching, application review, SOP and proposal preparation, interview planning and international doctoral admissions.',
+  stats: [
+    { value: '6500+', label: 'Scholars Assisted' },
+    { value: '3400+', label: 'Admission Offers Supported' },
+    { value: '61%', label: 'Application Success Benchmark' },
+  ],
+  benefits: ['University Shortlisting', 'Faculty Identification', 'SOP & Research Proposal Guidance', 'Application Review'],
+  radar: [
+    { value: '450+', label: 'Faculty Opportunities Tracked', icon: 'graduate' },
+    { value: 'NIH • ERC', label: 'Funding Sources Reviewed', icon: 'search' },
+    { value: 'Current', label: 'Admission-Cycle Focus', icon: 'compass' },
+    { value: 'Lab-Fit', label: 'Research Matching', icon: 'bulb' },
+  ],
+  services: [
+    { title: 'Strategic University Selection', icon: 'compass', intro: 'Build a balanced shortlist around the researcher you are and the work you want to pursue.', groups: [
+      { title: 'Profile Evaluation', text: 'Review academic qualifications, publications and research exposure, experience, and career plans.' },
+      { title: 'Best-Fit Matching', text: 'Compare universities, faculty and labs for research alignment and a suitable working environment.' },
+      { title: 'Portfolio Development', text: 'Balance aspirational universities, realistic matches and safer alternatives without assuming admission.' },
+    ] },
+    { title: 'PhD Application Form Assistance', icon: 'file', intro: 'Turn separate application requirements into a clear, manageable submission plan.', points: ['Application Guidance', 'Application Review', 'Document Consistency', 'Deadline Planning', 'Submission Checklist'] },
+    { title: 'Interview Preparation', icon: 'graduate', intro: 'Practise explaining your research interests, experience and motivation in your own voice.', points: ['Probable Interview Questions', 'Academic Story Development', 'Research Pitch Preparation', 'Faculty-Specific Preparation', 'Mock Interview Guidance'] },
+    { title: 'Statement of Purpose & Research Proposal Guidance', icon: 'edit', intro: 'Develop and revise your own ideas with constructive feedback. You remain the author of every application document.', points: ['Research Idea Refinement', 'Research Problem Definition', 'Objectives Development', 'Methodology Structuring', 'Academic Narrative', 'Research Impact', 'University-Specific Personalisation'] },
+  ],
+  packages: [
+    { id: 'standard', title: 'Standard', price: 'Contact for Pricing', description: 'Focused support for a clearer, more consistent application.' },
+    { id: 'advanced', title: 'Advanced', price: 'Contact for Pricing', description: 'Broader guidance across research positioning and interview preparation.' },
+  ],
+  packageRows: [
+    ['University Shortlisting', 'Included', 'Included'],
+    ['PhD Application Review', 'Included', 'Included'],
+    ['Faculty Pre-Outreach Guidance', 'Optional', 'Included'],
+    ['Interview Preparation', 'Core guidance', 'Extended guidance'],
+    ['Recommendation Letter Guidance', 'Included', 'Included'],
+    ['Statement of Purpose Review', 'Included', 'Included'],
+    ['Motivation Letter Review', 'Optional', 'Included'],
+    ['Research Proposal Guidance', 'Optional', 'Included'],
+    ['Research Presentation Guidance', 'Optional', 'Included'],
+    ['CV Enhancement', 'Included', 'Included'],
+    ['Mock Interview', 'Optional', 'Included'],
+  ],
+  faqs: [
+    ['What support is available for PhD applications?', 'Guidance can cover profile assessment, university and faculty shortlisting, application review, research proposals and interview preparation. We agree the scope with you before starting.'],
+    ['How do you shortlist suitable universities?', 'We consider your academic background, research interests, preferred location and funding needs, then assess programme requirements and faculty alignment together.'],
+    ['Can you assist with fully funded PhD opportunities?', 'We can help you identify advertised funded positions and assess their published requirements. Funding is competitive and is awarded by the institution or funder, not by our team.'],
+    ['Do you help identify potential research supervisors?', 'Yes. We guide you in reviewing faculty research and lab activity so you can prepare informed, personalised outreach. You contact supervisors in your own name.'],
+    ['Can you review my Statement of Purpose?', 'We offer feedback on structure, clarity, evidence and programme fit. The statement should accurately represent your experience and remain your own work.'],
+    ['Can you assist with research proposal preparation?', 'We help you refine a research question and review objectives, methodology and feasibility. You develop the ideas and write the proposal; we provide guidance and feedback.'],
+    ['Which countries do you support?', 'Consultations can cover applications to the United States, United Kingdom, Europe, Australia and Canada. Available support depends on your discipline and target programme.'],
+    ['Do you help with PhD interview preparation?', 'We help you organise your academic story and research pitch, anticipate questions and practise discussing your proposal through mock interview guidance.'],
+    ['Do you provide visa assistance?', 'This service focuses on academic applications. For visa requirements and immigration advice, consult the relevant government authority or a qualified adviser.'],
+    ['How can I begin the consultation process?', 'Complete the consultation form with your background, research area and target region. Our team can then discuss your priorities and an appropriate support plan.'],
+  ],
+  universities: [
+    ['Technical University of Munich', 'Germany'], ['KU Leuven', 'Belgium'],
+    ['Utrecht University', 'Netherlands'], ['Uppsala University', 'Sweden'],
+    ['Brunel University London', 'United Kingdom'], ['University of Amsterdam', 'Netherlands'],
+    ['University of Zurich', 'Switzerland'], ['University of Vienna', 'Austria'],
+  ],
+  scholarships: [
+    { name: 'Marie Skłodowska-Curie Actions (MSCA)', region: 'Europe & participating institutions', text: 'Doctoral Networks advertise funded research positions within collaborative projects. Candidates apply to individual vacancies and should check each project’s conditions.', url: 'https://marie-sklodowska-curie-actions.ec.europa.eu/actions/doctoral-networks' },
+    { name: 'DAAD – German Academic Exchange Service', region: 'Germany', text: 'DAAD offers several research and doctoral funding routes. Available programmes depend on your country of origin, academic stage and proposed research.', url: 'https://www.daad.de/en/studying-in-germany/scholarships/daad-scholarships/' },
+    { name: 'Eiffel Excellence Scholarship', region: 'France', text: 'French institutions nominate eligible international candidates for this scholarship programme, including doctoral opportunities in designated subject areas.', url: 'https://www.campusfrance.org/en/france-excellence-eiffel-scholarship-program' },
+    { name: 'Gates Cambridge Scholarship', region: 'United Kingdom', text: 'A competitive funding route for eligible international postgraduate applicants to Cambridge. Review the official course and applicant criteria before preparing your application.', url: 'https://www.postgraduate.study.cam.ac.uk/funding/applying-university-funding' },
+    { name: 'EUI Doctoral Fellowships', region: 'Italy', text: 'Doctoral funding at the European University Institute is offered through several funding authorities and schemes. Conditions vary by candidate and funding source.', url: 'https://www.eui.eu/en/services/academic-service/doctoral-programme/funding-information/funding-information-overview' },
+    { name: 'Boehringer Ingelheim Fonds PhD Fellowship', region: 'International · biomedical research', text: 'Supports outstanding candidates pursuing experimental projects in basic biomedical research. Both the proposed project and host laboratory are part of the assessment.', url: 'https://bifonds.de/fellowships-grants/phd-fellowships.html' },
+  ],
+  whyChooseUs: [
+    { title: 'Multiple-Region Expertise', icon: 'graduate', text: 'Plan around the different application structures and expectations of international education systems.' },
+    { title: 'Research-Centric Approach', icon: 'search', text: 'Make faculty alignment, research questions and the lab environment central to your shortlist.' },
+    { title: 'Ethical Academic Support', icon: 'badge', text: 'Receive honest feedback and guidance while retaining authorship and control of your applications.' },
+    { title: 'Personalized Guidance', icon: 'compass', text: 'Work from a one-to-one strategy shaped by your experience, priorities and next academic step.' },
+  ],
+  reviews: [
+    { name: 'Sample scholar A', context: 'University shortlisting · illustrative example', text: 'The most useful part would be understanding why each programme fits my research interests, rather than receiving a long list of universities.' },
+    { name: 'Sample scholar B', context: 'Application review · illustrative example', text: 'Clear feedback on the structure of my statement would help me explain my experience while keeping the application in my own voice.' },
+    { name: 'Sample scholar C', context: 'Interview preparation · illustrative example', text: 'Practising my research pitch and discussing likely questions would make the preparation process feel more manageable.' },
+  ],
+  brochureUrl: null,
+};

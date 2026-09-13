@@ -1,0 +1,149 @@
+{
+  "pages": [
+    {
+      "path": "/",
+      "sameMarkup": true,
+      "count": 1,
+      "height": 593.7999877929688,
+      "overflow": false
+    },
+    {
+      "path": "/analysis",
+      "sameMarkup": true,
+      "count": 1,
+      "height": 593.7999877929688,
+      "overflow": false
+    },
+    {
+      "path": "/contact",
+      "sameMarkup": true,
+      "count": 1,
+      "height": 593.7999877929688,
+      "overflow": false
+    },
+    {
+      "path": "/services/problem-statement",
+      "sameMarkup": true,
+      "count": 1,
+      "height": 593.7999877929688,
+      "overflow": false
+    },
+    {
+      "path": "/services/matlab-projects",
+      "sameMarkup": true,
+      "count": 1,
+      "height": 593.7999877929688,
+      "overflow": false
+    },
+    {
+      "path": "/review-article",
+      "sameMarkup": true,
+      "count": 1,
+      "height": 593.7999877929688,
+      "overflow": false
+    }
+  ],
+  "responsive": [
+    {
+      "callLeft": 1390.4000244140625,
+      "clearance": 5.5999755859375,
+      "contactColumns": "496.087px 318.913px 389.788px",
+      "contentRight": 1384.800048828125,
+      "emailOverflow": false,
+      "overflow": false,
+      "topColumns": "393.263px 262.175px 262.175px 262.188px",
+      "width": 1440
+    },
+    {
+      "callLeft": 1052,
+      "clearance": 5.5999755859375,
+      "contactColumns": "356.75px 229.337px 280.3px",
+      "contentRight": 1046.4000244140625,
+      "emailOverflow": false,
+      "overflow": false,
+      "topColumns": "280.462px 186.975px 186.975px 186.988px",
+      "width": 1102
+    },
+    {
+      "callLeft": 974.4000244140624,
+      "clearance": 5.60003662109375,
+      "contactColumns": "446.9px 446.9px",
+      "contentRight": 968.7999877929688,
+      "emailOverflow": false,
+      "overflow": false,
+      "topColumns": "446.9px 446.9px",
+      "width": 1024
+    },
+    {
+      "callLeft": 718.4000244140625,
+      "clearance": 5.60003662109375,
+      "contactColumns": "318.9px 318.9px",
+      "contentRight": 712.7999877929688,
+      "emailOverflow": false,
+      "overflow": false,
+      "topColumns": "318.9px 318.9px",
+      "width": 768
+    },
+    {
+      "callLeft": 319.20001220703125,
+      "clearance": 16,
+      "contactColumns": "283.2px",
+      "contentRight": 303.20001220703125,
+      "emailOverflow": false,
+      "overflow": false,
+      "topColumns": "283.2px",
+      "width": 390
+    },
+    {
+      "callLeft": 248.8000030517578,
+      "clearance": 0.8000030517578125,
+      "contactColumns": "228px",
+      "contentRight": 248,
+      "emailOverflow": false,
+      "overflow": false,
+      "topColumns": "228px",
+      "width": 320
+    }
+  ],
+  "smallest": [
+    {
+      "path": "/",
+      "clientWidth": 305,
+      "footerCount": 1,
+      "scrollWidth": 305
+    },
+    {
+      "path": "/analysis",
+      "clientWidth": 305,
+      "footerCount": 1,
+      "scrollWidth": 305
+    },
+    {
+      "path": "/contact",
+      "clientWidth": 305,
+      "footerCount": 1,
+      "scrollWidth": 305
+    },
+    {
+      "path": "/services/problem-statement",
+      "clientWidth": 305,
+      "footerCount": 1,
+      "scrollWidth": 305
+    },
+    {
+      "path": "/services/matlab-projects",
+      "clientWidth": 305,
+      "footerCount": 1,
+      "scrollWidth": 305
+    },
+    {
+      "path": "/review-article",
+      "clientWidth": 305,
+      "footerCount": 1,
+      "scrollWidth": 305
+    }
+  ],
+  "contactLinks": "Verified exact tel and mailto destinations",
+  "build": "Passed",
+  "navigationAudit": "Passed"
+}

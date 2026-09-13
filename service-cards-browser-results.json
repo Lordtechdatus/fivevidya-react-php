@@ -1,0 +1,793 @@
+{
+  "desktop": [
+    {
+      "card": "View Topic and Research Proposal service",
+      "url": "http://127.0.0.1:8765/services/topic-and-research-proposal",
+      "active": "Where to Start",
+      "footer": true,
+      "h1": "Topic and PhD Research Proposal",
+      "header": true,
+      "overflow": false,
+      "related": [
+        {
+          "path": "/services/problem-statement",
+          "title": "Problem Statement↗"
+        },
+        {
+          "path": "/services/base-papers",
+          "title": "Base Papers↗"
+        },
+        {
+          "path": "/research-design",
+          "title": "Research Design↗"
+        }
+      ],
+      "top": 0
+    },
+    {
+      "card": "View Problem Statement service",
+      "url": "http://127.0.0.1:8765/services/problem-statement",
+      "active": "Where to Start",
+      "footer": true,
+      "h1": "Problem Statement Development for PhD Research",
+      "header": true,
+      "overflow": false,
+      "related": [
+        {
+          "path": "/services/topic-and-research-proposal",
+          "title": "Topic and Research Proposal↗"
+        },
+        {
+          "path": "/services/base-papers",
+          "title": "Base Papers↗"
+        },
+        {
+          "path": "/research-design",
+          "title": "Research Design↗"
+        }
+      ],
+      "top": 0
+    },
+    {
+      "card": "View Base Papers service",
+      "url": "http://127.0.0.1:8765/services/base-papers",
+      "active": "Where to Start",
+      "footer": true,
+      "h1": "Base Papers for Research and Implementation",
+      "header": true,
+      "overflow": false,
+      "related": [
+        {
+          "path": "/services/topic-and-research-proposal",
+          "title": "Topic and Research Proposal↗"
+        },
+        {
+          "path": "/services/problem-statement",
+          "title": "Problem Statement↗"
+        },
+        {
+          "path": "/research-design",
+          "title": "Research Design↗"
+        }
+      ],
+      "top": 0
+    },
+    {
+      "card": "View Chapters Writing service",
+      "url": "http://127.0.0.1:8765/chapters-writing",
+      "active": "Moving Along",
+      "footer": true,
+      "h1": "Chapters Writing",
+      "header": true,
+      "overflow": false,
+      "related": [
+        {
+          "path": "/editing",
+          "title": "Editing ↗"
+        },
+        {
+          "path": "/formatting",
+          "title": "Formatting ↗"
+        },
+        {
+          "path": "/development-editing",
+          "title": "Development Editing ↗"
+        },
+        {
+          "path": "/analysis",
+          "title": "Analysis ↗"
+        }
+      ],
+      "top": 0
+    },
+    {
+      "card": "View Questionnaire and Experiments service",
+      "url": "http://127.0.0.1:8765/questionnaire-and-experiments",
+      "active": "Moving Along",
+      "footer": true,
+      "h1": "Questionnaire and Experiments",
+      "header": true,
+      "overflow": false,
+      "related": [
+        {
+          "path": "/research-design",
+          "title": "Research Design ↗"
+        },
+        {
+          "path": "/analysis",
+          "title": "Analysis ↗"
+        },
+        {
+          "path": "/quantitative-data-analysis",
+          "title": "Quantitative Data Analysis ↗"
+        },
+        {
+          "path": "/qualitative-data-analysis",
+          "title": "Qualitative Data Analysis ↗"
+        }
+      ],
+      "top": 0
+    },
+    {
+      "card": "View Implementation service",
+      "url": "http://127.0.0.1:8765/implementation",
+      "active": "Moving Along",
+      "footer": true,
+      "h1": "Implementation",
+      "header": true,
+      "overflow": false,
+      "related": [
+        {
+          "path": "/services/matlab-projects",
+          "title": "MATLAB Projects ↗"
+        },
+        {
+          "path": "/services/simulink-projects",
+          "title": "Simulink Projects ↗"
+        },
+        {
+          "path": "/services/python-projects",
+          "title": "Python Projects ↗"
+        },
+        {
+          "path": "/services/java-projects",
+          "title": "Java Projects ↗"
+        },
+        {
+          "path": "/services/ansys-projects",
+          "title": "ANSYS Projects ↗"
+        },
+        {
+          "path": "/technical-article",
+          "title": "Technical Article ↗"
+        }
+      ],
+      "top": 0
+    },
+    {
+      "card": "View Analysis service",
+      "url": "http://127.0.0.1:8765/analysis",
+      "active": "Moving Along",
+      "footer": true,
+      "h1": "Analysis",
+      "header": true,
+      "overflow": false,
+      "related": [
+        {
+          "path": "/qualitative-data-analysis",
+          "title": "Qualitative Data Analysis ↗"
+        },
+        {
+          "path": "/quantitative-data-analysis",
+          "title": "Quantitative Data Analysis ↗"
+        },
+        {
+          "path": "/research-design",
+          "title": "Research Design ↗"
+        },
+        {
+          "path": "/questionnaire-and-experiments",
+          "title": "Questionnaire and Experiments ↗"
+        }
+      ],
+      "top": 0
+    },
+    {
+      "card": "View Editing service",
+      "url": "http://127.0.0.1:8765/editing",
+      "active": "Finishing Up",
+      "footer": true,
+      "h1": "Editing",
+      "header": true,
+      "overflow": false,
+      "related": [
+        {
+          "path": "/formatting",
+          "title": "Formatting ↗"
+        },
+        {
+          "path": "/development-editing",
+          "title": "Development Editing ↗"
+        },
+        {
+          "path": "/humanise-ai-academic-content",
+          "title": "Humanise AI Academic Content ↗"
+        }
+      ],
+      "top": 0
+    },
+    {
+      "card": "View Formatting service",
+      "url": "http://127.0.0.1:8765/formatting",
+      "active": "Finishing Up",
+      "footer": true,
+      "h1": "Formatting",
+      "header": true,
+      "overflow": false,
+      "related": [
+        {
+          "path": "/editing",
+          "title": "Editing ↗"
+        },
+        {
+          "path": "/chapters-writing",
+          "title": "Chapters Writing ↗"
+        },
+        {
+          "path": "/journal-papers",
+          "title": "Journal Papers ↗"
+        }
+      ],
+      "top": 0
+    },
+    {
+      "card": "View Journal Papers service",
+      "url": "http://127.0.0.1:8765/journal-papers",
+      "active": "Also Do This",
+      "footer": true,
+      "h1": "Journal Papers",
+      "header": true,
+      "overflow": false,
+      "related": [
+        {
+          "path": "/review-article",
+          "title": "Review Article ↗"
+        },
+        {
+          "path": "/empirical-article",
+          "title": "Empirical Article ↗"
+        },
+        {
+          "path": "/technical-article",
+          "title": "Technical Article ↗"
+        },
+        {
+          "path": "/ieee-papers",
+          "title": "IEEE / Scopus Paper Support ↗"
+        }
+      ],
+      "top": 0
+    },
+    {
+      "card": "View IEEE Papers service",
+      "url": "http://127.0.0.1:8765/ieee-papers",
+      "active": "Also Do This",
+      "footer": true,
+      "h1": "IEEE / Scopus Paper Support",
+      "header": true,
+      "overflow": false,
+      "related": [
+        {
+          "path": "/technical-article",
+          "title": "Technical Article ↗"
+        },
+        {
+          "path": "/journal-papers",
+          "title": "Journal Papers ↗"
+        },
+        {
+          "path": "/formatting",
+          "title": "Formatting ↗"
+        },
+        {
+          "path": "/editing",
+          "title": "Editing ↗"
+        }
+      ],
+      "top": 0
+    },
+    {
+      "card": "View Thought Clearing service",
+      "url": "http://127.0.0.1:8765/thought-clearing",
+      "active": "PhD Guide",
+      "footer": true,
+      "h1": "Thought Clearing",
+      "header": true,
+      "overflow": false,
+      "related": [
+        {
+          "path": "/services/topic-and-research-proposal",
+          "title": "Topic and Research Proposal ↗"
+        },
+        {
+          "path": "/services/problem-statement",
+          "title": "Problem Statement ↗"
+        },
+        {
+          "path": "/research-design",
+          "title": "Research Design ↗"
+        }
+      ],
+      "top": 0
+    },
+    {
+      "card": "View Development Editing service",
+      "url": "http://127.0.0.1:8765/development-editing",
+      "active": "PhD Guide",
+      "footer": true,
+      "h1": "Development Editing",
+      "header": true,
+      "overflow": false,
+      "related": [
+        {
+          "path": "/editing",
+          "title": "Editing ↗"
+        },
+        {
+          "path": "/chapters-writing",
+          "title": "Chapters Writing ↗"
+        },
+        {
+          "path": "/thought-clearing",
+          "title": "Thought Clearing ↗"
+        }
+      ],
+      "top": 0
+    },
+    {
+      "card": "View Research Design service",
+      "url": "http://127.0.0.1:8765/research-design",
+      "active": "PhD Guide",
+      "footer": true,
+      "h1": "Research Design",
+      "header": true,
+      "overflow": false,
+      "related": [
+        {
+          "path": "/services/topic-and-research-proposal",
+          "title": "Topic and Research Proposal ↗"
+        },
+        {
+          "path": "/questionnaire-and-experiments",
+          "title": "Questionnaire and Experiments ↗"
+        },
+        {
+          "path": "/analysis",
+          "title": "Analysis ↗"
+        },
+        {
+          "path": "/thought-clearing",
+          "title": "Thought Clearing ↗"
+        }
+      ],
+      "top": 0
+    },
+    {
+      "card": "View Review Article service",
+      "url": "http://127.0.0.1:8765/review-article",
+      "active": "Also Do This",
+      "footer": true,
+      "h1": "Review Article",
+      "header": true,
+      "overflow": false,
+      "related": [
+        {
+          "path": "/services/base-papers",
+          "title": "Base Papers ↗"
+        },
+        {
+          "path": "/journal-papers",
+          "title": "Journal Papers ↗"
+        },
+        {
+          "path": "/research-design",
+          "title": "Research Design ↗"
+        }
+      ],
+      "top": 0
+    },
+    {
+      "card": "View Empirical Article service",
+      "url": "http://127.0.0.1:8765/empirical-article",
+      "active": "Also Do This",
+      "footer": true,
+      "h1": "Empirical Article",
+      "header": true,
+      "overflow": false,
+      "related": [
+        {
+          "path": "/journal-papers",
+          "title": "Journal Papers ↗"
+        },
+        {
+          "path": "/analysis",
+          "title": "Analysis ↗"
+        },
+        {
+          "path": "/editing",
+          "title": "Editing ↗"
+        }
+      ],
+      "top": 0
+    },
+    {
+      "card": "View Technical Article service",
+      "url": "http://127.0.0.1:8765/technical-article",
+      "active": "Also Do This",
+      "footer": true,
+      "h1": "Technical Article",
+      "header": true,
+      "overflow": false,
+      "related": [
+        {
+          "path": "/implementation",
+          "title": "Implementation ↗"
+        },
+        {
+          "path": "/ieee-papers",
+          "title": "IEEE / Scopus Paper Support ↗"
+        },
+        {
+          "path": "/journal-papers",
+          "title": "Journal Papers ↗"
+        },
+        {
+          "path": "/analysis",
+          "title": "Analysis ↗"
+        }
+      ],
+      "top": 0
+    },
+    {
+      "card": "View Qualitative Data Analysis service",
+      "url": "http://127.0.0.1:8765/qualitative-data-analysis",
+      "active": "Moving Along",
+      "footer": true,
+      "h1": "Qualitative Data Analysis",
+      "header": true,
+      "overflow": false,
+      "related": [
+        {
+          "path": "/analysis",
+          "title": "Analysis ↗"
+        },
+        {
+          "path": "/research-design",
+          "title": "Research Design ↗"
+        },
+        {
+          "path": "/questionnaire-and-experiments",
+          "title": "Questionnaire and Experiments ↗"
+        }
+      ],
+      "top": 0
+    },
+    {
+      "card": "View Quantitative Data Analysis service",
+      "url": "http://127.0.0.1:8765/quantitative-data-analysis",
+      "active": "Moving Along",
+      "footer": true,
+      "h1": "Quantitative Data Analysis",
+      "header": true,
+      "overflow": false,
+      "related": [
+        {
+          "path": "/analysis",
+          "title": "Analysis ↗"
+        },
+        {
+          "path": "/questionnaire-and-experiments",
+          "title": "Questionnaire and Experiments ↗"
+        },
+        {
+          "path": "/research-design",
+          "title": "Research Design ↗"
+        }
+      ],
+      "top": 0
+    },
+    {
+      "card": "View MATLAB Projects service",
+      "url": "http://127.0.0.1:8765/services/matlab-projects",
+      "active": "Moving Along",
+      "footer": true,
+      "h1": "MATLAB Software & Research Implementation",
+      "header": true,
+      "overflow": false,
+      "related": [
+        {
+          "path": "/services/simulink-projects",
+          "title": "Simulink Projects↗"
+        },
+        {
+          "path": "/services/python-projects",
+          "title": "Python Projects↗"
+        },
+        {
+          "path": "/services/java-projects",
+          "title": "Java Projects↗"
+        },
+        {
+          "path": "/services/ansys-projects",
+          "title": "ANSYS Projects↗"
+        }
+      ],
+      "top": 0
+    },
+    {
+      "card": "View Simulink Projects service",
+      "url": "http://127.0.0.1:8765/services/simulink-projects",
+      "active": "Moving Along",
+      "footer": true,
+      "h1": "Simulink Implementation & Model Development",
+      "header": true,
+      "overflow": false,
+      "related": [
+        {
+          "path": "/services/matlab-projects",
+          "title": "MATLAB Projects↗"
+        },
+        {
+          "path": "/services/python-projects",
+          "title": "Python Projects↗"
+        },
+        {
+          "path": "/services/java-projects",
+          "title": "Java Projects↗"
+        },
+        {
+          "path": "/services/ansys-projects",
+          "title": "ANSYS Projects↗"
+        }
+      ],
+      "top": 0
+    },
+    {
+      "card": "View Python Projects service",
+      "url": "http://127.0.0.1:8765/services/python-projects",
+      "active": "Moving Along",
+      "footer": true,
+      "h1": "Python Implementation & Research Development",
+      "header": true,
+      "overflow": false,
+      "related": [
+        {
+          "path": "/services/matlab-projects",
+          "title": "MATLAB Projects↗"
+        },
+        {
+          "path": "/services/simulink-projects",
+          "title": "Simulink Projects↗"
+        },
+        {
+          "path": "/services/java-projects",
+          "title": "Java Projects↗"
+        },
+        {
+          "path": "/services/ansys-projects",
+          "title": "ANSYS Projects↗"
+        }
+      ],
+      "top": 0
+    },
+    {
+      "card": "View Java Projects service",
+      "url": "http://127.0.0.1:8765/services/java-projects",
+      "active": "Moving Along",
+      "footer": true,
+      "h1": "Java Implementation & Application Development",
+      "header": true,
+      "overflow": false,
+      "related": [
+        {
+          "path": "/services/matlab-projects",
+          "title": "MATLAB Projects↗"
+        },
+        {
+          "path": "/services/simulink-projects",
+          "title": "Simulink Projects↗"
+        },
+        {
+          "path": "/services/python-projects",
+          "title": "Python Projects↗"
+        },
+        {
+          "path": "/services/ansys-projects",
+          "title": "ANSYS Projects↗"
+        }
+      ],
+      "top": 0
+    },
+    {
+      "card": "View ANSYS Projects service",
+      "url": "http://127.0.0.1:8765/services/ansys-projects",
+      "active": "Moving Along",
+      "footer": true,
+      "h1": "ANSYS Simulation & Engineering Implementation",
+      "header": true,
+      "overflow": false,
+      "related": [
+        {
+          "path": "/services/matlab-projects",
+          "title": "MATLAB Projects↗"
+        },
+        {
+          "path": "/services/simulink-projects",
+          "title": "Simulink Projects↗"
+        },
+        {
+          "path": "/services/python-projects",
+          "title": "Python Projects↗"
+        },
+        {
+          "path": "/services/java-projects",
+          "title": "Java Projects↗"
+        }
+      ],
+      "top": 0
+    }
+  ],
+  "mobile": [
+    {
+      "name": "View Topic and Research Proposal service",
+      "h1": "Topic and PhD Research Proposal",
+      "overflow": false
+    },
+    {
+      "name": "View Problem Statement service",
+      "h1": "Problem Statement Development for PhD Research",
+      "overflow": false
+    },
+    {
+      "name": "View Base Papers service",
+      "h1": "Base Papers for Research and Implementation",
+      "overflow": false
+    },
+    {
+      "name": "View Chapters Writing service",
+      "h1": "Chapters Writing",
+      "overflow": false
+    },
+    {
+      "name": "View Questionnaire and Experiments service",
+      "h1": "Questionnaire and Experiments",
+      "overflow": false
+    },
+    {
+      "name": "View Implementation service",
+      "h1": "Implementation",
+      "overflow": false
+    },
+    {
+      "name": "View Analysis service",
+      "h1": "Analysis",
+      "overflow": false
+    },
+    {
+      "name": "View Editing service",
+      "h1": "Editing",
+      "overflow": false
+    },
+    {
+      "name": "View Formatting service",
+      "h1": "Formatting",
+      "overflow": false
+    },
+    {
+      "name": "View Journal Papers service",
+      "h1": "Journal Papers",
+      "overflow": false
+    },
+    {
+      "name": "View IEEE Papers service",
+      "h1": "IEEE / Scopus Paper Support",
+      "overflow": false
+    },
+    {
+      "name": "View Thought Clearing service",
+      "h1": "Thought Clearing",
+      "overflow": false
+    },
+    {
+      "name": "View Development Editing service",
+      "h1": "Development Editing",
+      "overflow": false
+    },
+    {
+      "name": "View Research Design service",
+      "h1": "Research Design",
+      "overflow": false
+    },
+    {
+      "name": "View Review Article service",
+      "h1": "Review Article",
+      "overflow": false
+    },
+    {
+      "name": "View Empirical Article service",
+      "h1": "Empirical Article",
+      "overflow": false
+    },
+    {
+      "name": "View Technical Article service",
+      "h1": "Technical Article",
+      "overflow": false
+    },
+    {
+      "name": "View Qualitative Data Analysis service",
+      "h1": "Qualitative Data Analysis",
+      "overflow": false
+    },
+    {
+      "name": "View Quantitative Data Analysis service",
+      "h1": "Quantitative Data Analysis",
+      "overflow": false
+    },
+    {
+      "name": "View MATLAB Projects service",
+      "h1": "MATLAB Software & Research Implementation",
+      "overflow": false
+    },
+    {
+      "name": "View Simulink Projects service",
+      "h1": "Simulink Implementation & Model Development",
+      "overflow": false
+    },
+    {
+      "name": "View Python Projects service",
+      "h1": "Python Implementation & Research Development",
+      "overflow": false
+    },
+    {
+      "name": "View Java Projects service",
+      "h1": "Java Implementation & Application Development",
+      "overflow": false
+    },
+    {
+      "name": "View ANSYS Projects service",
+      "h1": "ANSYS Simulation & Engineering Implementation",
+      "overflow": false
+    }
+  ],
+  "refresh": [
+    {
+      "requested": "/problem-statement",
+      "url": "http://127.0.0.1:8765/problem-statement",
+      "h1": "Problem Statement Development for PhD Research"
+    },
+    {
+      "requested": "/matlab-projects",
+      "url": "http://127.0.0.1:8765/matlab-projects",
+      "h1": "MATLAB Software & Research Implementation"
+    },
+    {
+      "requested": "/qualitative-data-analysis",
+      "url": "http://127.0.0.1:8765/qualitative-data-analysis",
+      "h1": "Qualitative Data Analysis"
+    },
+    {
+      "requested": "/review-article",
+      "url": "http://127.0.0.1:8765/review-article",
+      "h1": "Review Article"
+    }
+  ],
+  "cta": {
+    "technical": "Contact prefilled with MATLAB Projects; quote modal opens",
+    "research": "Contact prefilled with Problem Statement",
+    "standard": "Contact prefilled with Review Article; quote modal opens"
+  },
+  "keyboard": "Tab focuses next card; Enter navigates",
+  "newTab": "Ctrl-click opened MATLAB Projects in a second tab",
+  "hover": "Orange rgb(255,121,0), white description, opacity 1",
+  "notes": "Mobile viewport 390x844; physical touch device not available. Related destinations also covered by source route audits."
+}

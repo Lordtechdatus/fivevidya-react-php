@@ -1,0 +1,1592 @@
+{
+  "totals": {
+    "submenuEntries": 85,
+    "distinctSubmenuServices": 75,
+    "totalPageDestinations": 103,
+    "existingPagesRetained": 13,
+    "newPagesCreated": 90,
+    "misdirectedLinksFixed": 33,
+    "remainingMissingPages": 0
+  },
+  "pages": [
+    {
+      "id": "home",
+      "title": "Home",
+      "path": "/",
+      "parent": null,
+      "group": null,
+      "existing": true
+    },
+    {
+      "id": "where-to-start",
+      "title": "Where to Start",
+      "path": "/where-to-start",
+      "parent": null,
+      "group": "where-to-start",
+      "existing": false,
+      "overview": true
+    },
+    {
+      "id": "phd-admission-assistance",
+      "title": "PhD Admission Assistance",
+      "path": "/services/phd-admission-assistance",
+      "parent": "where-to-start",
+      "group": "where-to-start",
+      "existing": true
+    },
+    {
+      "id": "fast-track-phd-by-research-publication",
+      "title": "Fast-Track PhD by Research Publication",
+      "path": "/services/fast-track-phd-by-research-publication",
+      "parent": "where-to-start",
+      "group": "where-to-start",
+      "existing": true
+    },
+    {
+      "id": "phd-embarking-the-journey",
+      "title": "PhD – Embarking the Journey",
+      "path": "/services/phd-embarking-the-journey",
+      "parent": "where-to-start",
+      "group": "where-to-start",
+      "existing": true
+    },
+    {
+      "id": "topic-and-research-proposal",
+      "title": "Topic and Research Proposal",
+      "path": "/services/topic-and-research-proposal",
+      "parent": "where-to-start",
+      "group": "where-to-start",
+      "existing": true
+    },
+    {
+      "id": "problem-statement",
+      "title": "Problem Statement",
+      "path": "/services/problem-statement",
+      "parent": "where-to-start",
+      "group": "where-to-start",
+      "existing": true
+    },
+    {
+      "id": "base-papers",
+      "title": "Base Papers",
+      "path": "/services/base-papers",
+      "parent": "where-to-start",
+      "group": "where-to-start",
+      "existing": true
+    },
+    {
+      "id": "patent-support-and-consulting",
+      "title": "Patent Support and Consulting",
+      "path": "/services/patent-support-and-consulting",
+      "parent": "also-do-this",
+      "group": "publication-services",
+      "existing": true
+    },
+    {
+      "id": "moving-along",
+      "title": "Moving Along",
+      "path": "/moving-along",
+      "parent": null,
+      "group": "moving-along",
+      "existing": false,
+      "overview": true
+    },
+    {
+      "id": "implementation",
+      "title": "Implementation",
+      "path": "/implementation",
+      "parent": "moving-along",
+      "group": "implementation",
+      "existing": false,
+      "overview": true
+    },
+    {
+      "id": "matlab-projects",
+      "title": "MATLAB Projects",
+      "path": "/services/matlab-projects",
+      "parent": "moving-along",
+      "group": "implementation",
+      "existing": true
+    },
+    {
+      "id": "simulink-projects",
+      "title": "Simulink Projects",
+      "path": "/services/simulink-projects",
+      "parent": "moving-along",
+      "group": "implementation",
+      "existing": true
+    },
+    {
+      "id": "python-projects",
+      "title": "Python Projects",
+      "path": "/services/python-projects",
+      "parent": "moving-along",
+      "group": "implementation",
+      "existing": true
+    },
+    {
+      "id": "java-projects",
+      "title": "Java Projects",
+      "path": "/services/java-projects",
+      "parent": "moving-along",
+      "group": "implementation",
+      "existing": true
+    },
+    {
+      "id": "ansys-projects",
+      "title": "ANSYS Projects",
+      "path": "/services/ansys-projects",
+      "parent": "moving-along",
+      "group": "implementation",
+      "existing": true
+    },
+    {
+      "id": "analysis",
+      "title": "Analysis",
+      "path": "/analysis",
+      "parent": "moving-along",
+      "group": "analysis",
+      "existing": false,
+      "overview": true
+    },
+    {
+      "id": "qualitative-data-analysis",
+      "title": "Qualitative Data Analysis",
+      "path": "/qualitative-data-analysis",
+      "parent": "moving-along",
+      "group": "analysis",
+      "existing": false
+    },
+    {
+      "id": "quantitative-data-analysis",
+      "title": "Quantitative Data Analysis",
+      "path": "/quantitative-data-analysis",
+      "parent": "moving-along",
+      "group": "analysis",
+      "existing": false
+    },
+    {
+      "id": "other-services",
+      "title": "Other Services",
+      "path": "/other-services",
+      "parent": "moving-along",
+      "group": "other-services",
+      "existing": false,
+      "overview": true
+    },
+    {
+      "id": "chapters-writing",
+      "title": "Chapters Writing",
+      "path": "/chapters-writing",
+      "parent": "moving-along",
+      "group": "other-services",
+      "existing": false
+    },
+    {
+      "id": "questionnaire-and-experiments",
+      "title": "Questionnaire and Experiments",
+      "path": "/questionnaire-and-experiments",
+      "parent": "moving-along",
+      "group": "other-services",
+      "existing": false
+    },
+    {
+      "id": "humanise-ai-academic-content",
+      "title": "Humanise AI Academic Content",
+      "path": "/humanise-ai-academic-content",
+      "parent": "moving-along",
+      "group": "other-services",
+      "existing": false
+    },
+    {
+      "id": "finishing-up",
+      "title": "Finishing Up",
+      "path": "/finishing-up",
+      "parent": null,
+      "group": "finishing-up",
+      "existing": false,
+      "overview": true
+    },
+    {
+      "id": "editing",
+      "title": "Editing",
+      "path": "/editing",
+      "parent": "finishing-up",
+      "group": "finishing-up",
+      "existing": false
+    },
+    {
+      "id": "formatting",
+      "title": "Formatting",
+      "path": "/formatting",
+      "parent": "finishing-up",
+      "group": "finishing-up",
+      "existing": false
+    },
+    {
+      "id": "also-do-this",
+      "title": "Also Do This",
+      "path": "/also-do-this",
+      "parent": null,
+      "group": "also-do-this",
+      "existing": false,
+      "overview": true
+    },
+    {
+      "id": "journal-papers",
+      "title": "Journal Papers",
+      "path": "/journal-papers",
+      "parent": "also-do-this",
+      "group": "journal-papers",
+      "existing": false,
+      "overview": true
+    },
+    {
+      "id": "review-article",
+      "title": "Review Article",
+      "path": "/review-article",
+      "parent": "also-do-this",
+      "group": "journal-papers",
+      "existing": false
+    },
+    {
+      "id": "empirical-article",
+      "title": "Empirical Article",
+      "path": "/empirical-article",
+      "parent": "also-do-this",
+      "group": "journal-papers",
+      "existing": false
+    },
+    {
+      "id": "technical-article",
+      "title": "Technical Article",
+      "path": "/technical-article",
+      "parent": "also-do-this",
+      "group": "journal-papers",
+      "existing": false
+    },
+    {
+      "id": "publication-services",
+      "title": "Other Services",
+      "path": "/publication-services",
+      "parent": "also-do-this",
+      "group": "publication-services",
+      "existing": false,
+      "overview": true,
+      "displayTitle": "Other Publication Services"
+    },
+    {
+      "id": "ieee-papers",
+      "title": "IEEE / Scopus Paper Support",
+      "path": "/ieee-papers",
+      "parent": "also-do-this",
+      "group": "publication-services",
+      "existing": false
+    },
+    {
+      "id": "researcher-profile-enhancement",
+      "title": "Researcher Profile Enhancement",
+      "path": "/researcher-profile-enhancement",
+      "parent": "also-do-this",
+      "group": "publication-services",
+      "existing": false
+    },
+    {
+      "id": "phd-thesis-to-book-publication",
+      "title": "PhD Thesis to Book Publication",
+      "path": "/phd-thesis-to-book-publication",
+      "parent": "also-do-this",
+      "group": "publication-services",
+      "existing": false
+    },
+    {
+      "id": "phd-guide",
+      "title": "PhD Guide",
+      "path": "/phd-guide",
+      "parent": null,
+      "group": "phd-guide",
+      "existing": false,
+      "overview": true
+    },
+    {
+      "id": "thought-clearing",
+      "title": "Thought Clearing",
+      "path": "/thought-clearing",
+      "parent": "phd-guide",
+      "group": "phd-guide",
+      "existing": false
+    },
+    {
+      "id": "development-editing",
+      "title": "Development Editing",
+      "path": "/development-editing",
+      "parent": "phd-guide",
+      "group": "phd-guide",
+      "existing": false
+    },
+    {
+      "id": "research-design",
+      "title": "Research Design",
+      "path": "/research-design",
+      "parent": "phd-guide",
+      "group": "phd-guide",
+      "existing": false
+    },
+    {
+      "id": "contact",
+      "title": "Contact",
+      "path": "/contact",
+      "parent": null,
+      "group": null,
+      "existing": false
+    },
+    {
+      "id": "journal-publication",
+      "title": "Journal Publication",
+      "path": "/journal-publication",
+      "parent": null,
+      "group": "journal-publication",
+      "overview": true,
+      "kind": "publication"
+    },
+    {
+      "id": "scopus-indexed-journals",
+      "title": "Scopus Indexed Journals",
+      "path": "/scopus-indexed-journals",
+      "parent": "journal-publication",
+      "group": "scopus-indexed-journals",
+      "overview": true,
+      "kind": "publication"
+    },
+    {
+      "id": "q1-journals",
+      "title": "Q1 Journals",
+      "path": "/q1-journals",
+      "parent": "journal-publication",
+      "group": "scopus-indexed-journals",
+      "overview": true,
+      "kind": "publication"
+    },
+    {
+      "id": "q2-journals",
+      "title": "Q2 Journals",
+      "path": "/q2-journals",
+      "parent": "journal-publication",
+      "group": "scopus-indexed-journals",
+      "overview": true,
+      "kind": "publication"
+    },
+    {
+      "id": "q3-journals",
+      "title": "Q3 Journals",
+      "path": "/q3-journals",
+      "parent": "journal-publication",
+      "group": "scopus-indexed-journals",
+      "overview": true,
+      "kind": "publication"
+    },
+    {
+      "id": "q4-journals",
+      "title": "Q4 Journals",
+      "path": "/q4-journals",
+      "parent": "journal-publication",
+      "group": "scopus-indexed-journals",
+      "overview": true,
+      "kind": "publication"
+    },
+    {
+      "id": "web-of-science-journals",
+      "title": "Web of Science (WoS) Journals",
+      "path": "/web-of-science-journals",
+      "parent": "journal-publication",
+      "group": "web-of-science-journals",
+      "overview": true,
+      "kind": "publication"
+    },
+    {
+      "id": "scie-journals",
+      "title": "SCIE Journals",
+      "path": "/scie-journals",
+      "parent": "journal-publication",
+      "group": "web-of-science-journals",
+      "overview": true,
+      "kind": "publication"
+    },
+    {
+      "id": "ssci-journals",
+      "title": "SSCI Journals",
+      "path": "/ssci-journals",
+      "parent": "journal-publication",
+      "group": "web-of-science-journals",
+      "overview": true,
+      "kind": "publication"
+    },
+    {
+      "id": "ahci-journals",
+      "title": "AHCI Journals",
+      "path": "/ahci-journals",
+      "parent": "journal-publication",
+      "group": "web-of-science-journals",
+      "overview": true,
+      "kind": "publication"
+    },
+    {
+      "id": "esci-journals",
+      "title": "ESCI Journals",
+      "path": "/esci-journals",
+      "parent": "journal-publication",
+      "group": "web-of-science-journals",
+      "overview": true,
+      "kind": "publication"
+    },
+    {
+      "id": "peer-reviewed-journals",
+      "title": "Peer-Reviewed Journals",
+      "path": "/peer-reviewed-journals",
+      "parent": "journal-publication",
+      "group": "peer-reviewed-journals",
+      "overview": true,
+      "kind": "publication"
+    },
+    {
+      "id": "national-peer-reviewed-journals",
+      "title": "National Peer-Reviewed Journals",
+      "path": "/national-peer-reviewed-journals",
+      "parent": "journal-publication",
+      "group": "peer-reviewed-journals",
+      "overview": true,
+      "kind": "publication"
+    },
+    {
+      "id": "international-peer-reviewed-journals",
+      "title": "International Peer-Reviewed Journals",
+      "path": "/international-peer-reviewed-journals",
+      "parent": "journal-publication",
+      "group": "peer-reviewed-journals",
+      "overview": true,
+      "kind": "publication"
+    },
+    {
+      "id": "government-recognized-journals",
+      "title": "Government / Recognized Journals",
+      "path": "/government-recognized-journals",
+      "parent": "journal-publication",
+      "group": "government-recognized-journals",
+      "overview": true,
+      "kind": "publication"
+    },
+    {
+      "id": "preferred-publishers",
+      "title": "Preferred Publishers",
+      "path": "/preferred-publishers",
+      "parent": "journal-publication",
+      "group": "preferred-publishers",
+      "overview": true,
+      "kind": "publication"
+    },
+    {
+      "id": "book-publication",
+      "title": "Book Publication",
+      "path": "/book-publication",
+      "parent": null,
+      "group": "book-publication",
+      "overview": true,
+      "kind": "book"
+    },
+    {
+      "id": "book-chapter-publication",
+      "title": "Book Chapter Publication",
+      "path": "/book-chapter-publication",
+      "parent": "book-publication",
+      "group": "book-chapter-publication",
+      "overview": true,
+      "kind": "book"
+    },
+    {
+      "id": "scopus-indexed-book-chapters",
+      "title": "Scopus Indexed Book Chapters",
+      "path": "/scopus-indexed-book-chapters",
+      "parent": "book-publication",
+      "group": "book-chapter-publication",
+      "overview": true,
+      "kind": "book"
+    },
+    {
+      "id": "web-of-science-indexed-book-chapters",
+      "title": "Web of Science Indexed Book Chapters",
+      "path": "/web-of-science-indexed-book-chapters",
+      "parent": "book-publication",
+      "group": "book-chapter-publication",
+      "overview": true,
+      "kind": "book"
+    },
+    {
+      "id": "peer-reviewed-book-chapters",
+      "title": "Peer-Reviewed Book Chapters",
+      "path": "/peer-reviewed-book-chapters",
+      "parent": "book-publication",
+      "group": "book-chapter-publication",
+      "overview": true,
+      "kind": "book"
+    },
+    {
+      "id": "edited-book-chapters",
+      "title": "Edited Book Chapters",
+      "path": "/edited-book-chapters",
+      "parent": "book-publication",
+      "group": "book-chapter-publication",
+      "overview": true,
+      "kind": "book"
+    },
+    {
+      "id": "full-book-publication",
+      "title": "Full Book Publication",
+      "path": "/full-book-publication",
+      "parent": "book-publication",
+      "group": "full-book-publication",
+      "overview": true,
+      "kind": "book"
+    },
+    {
+      "id": "textbooks",
+      "title": "Textbooks",
+      "path": "/textbooks",
+      "parent": "book-publication",
+      "group": "full-book-publication",
+      "overview": true,
+      "kind": "book"
+    },
+    {
+      "id": "reference-books",
+      "title": "Reference Books",
+      "path": "/reference-books",
+      "parent": "book-publication",
+      "group": "full-book-publication",
+      "overview": true,
+      "kind": "book"
+    },
+    {
+      "id": "research-monographs",
+      "title": "Research Monographs",
+      "path": "/research-monographs",
+      "parent": "book-publication",
+      "group": "full-book-publication",
+      "overview": true,
+      "kind": "book"
+    },
+    {
+      "id": "edited-books",
+      "title": "Edited Books",
+      "path": "/edited-books",
+      "parent": "book-publication",
+      "group": "full-book-publication",
+      "overview": true,
+      "kind": "book"
+    },
+    {
+      "id": "conference-proceedings",
+      "title": "Conference Proceedings",
+      "path": "/conference-proceedings",
+      "parent": "book-publication",
+      "group": "full-book-publication",
+      "overview": true,
+      "kind": "book"
+    },
+    {
+      "id": "isbn-publication",
+      "title": "ISBN Publication",
+      "path": "/isbn-publication",
+      "parent": "book-publication",
+      "group": "isbn-publication",
+      "overview": true,
+      "kind": "book"
+    },
+    {
+      "id": "national-isbn-books",
+      "title": "National ISBN Books",
+      "path": "/national-isbn-books",
+      "parent": "book-publication",
+      "group": "isbn-publication",
+      "overview": true,
+      "kind": "book"
+    },
+    {
+      "id": "international-isbn-books",
+      "title": "International ISBN Books",
+      "path": "/international-isbn-books",
+      "parent": "book-publication",
+      "group": "isbn-publication",
+      "overview": true,
+      "kind": "book"
+    },
+    {
+      "id": "isbn-book-chapters",
+      "title": "ISBN Book Chapters / Edited Volumes",
+      "path": "/isbn-book-chapters",
+      "parent": "book-publication",
+      "group": "isbn-publication",
+      "overview": true,
+      "kind": "book"
+    },
+    {
+      "id": "book-editing-services",
+      "title": "Book Editing Services",
+      "path": "/book-editing-services",
+      "parent": "book-publication",
+      "group": "book-editing-services",
+      "overview": true,
+      "kind": "book"
+    },
+    {
+      "id": "proposal-preparation",
+      "title": "Proposal Preparation",
+      "path": "/proposal-preparation",
+      "parent": "book-publication",
+      "group": "book-editing-services",
+      "overview": true,
+      "kind": "book"
+    },
+    {
+      "id": "chapter-structuring",
+      "title": "Chapter Structuring",
+      "path": "/chapter-structuring",
+      "parent": "book-publication",
+      "group": "book-editing-services",
+      "overview": true,
+      "kind": "book"
+    },
+    {
+      "id": "language-editing",
+      "title": "Language Editing",
+      "path": "/language-editing",
+      "parent": "book-publication",
+      "group": "book-editing-services",
+      "overview": true,
+      "kind": "book"
+    },
+    {
+      "id": "reference-formatting",
+      "title": "Reference Formatting",
+      "path": "/reference-formatting",
+      "parent": "book-publication",
+      "group": "book-editing-services",
+      "overview": true,
+      "kind": "book"
+    },
+    {
+      "id": "similarity-review",
+      "title": "Plagiarism / Similarity Review",
+      "path": "/similarity-review",
+      "parent": "book-publication",
+      "group": "book-editing-services",
+      "overview": true,
+      "kind": "book"
+    },
+    {
+      "id": "book-proposal-submission",
+      "title": "Book Proposal & Submission",
+      "path": "/book-proposal-submission",
+      "parent": "book-publication",
+      "group": "book-proposal-submission",
+      "overview": true,
+      "kind": "book"
+    },
+    {
+      "id": "publisher-selection",
+      "title": "Publisher Selection",
+      "path": "/publishers/selection",
+      "parent": "book-publication",
+      "group": "book-proposal-submission",
+      "overview": true,
+      "kind": "book"
+    },
+    {
+      "id": "book-proposal-development",
+      "title": "Book Proposal Development",
+      "path": "/book-proposal-development",
+      "parent": "book-publication",
+      "group": "book-proposal-submission",
+      "overview": true,
+      "kind": "book"
+    },
+    {
+      "id": "manuscript-preparation",
+      "title": "Manuscript Preparation",
+      "path": "/manuscript-preparation",
+      "parent": "book-publication",
+      "group": "book-proposal-submission",
+      "overview": true,
+      "kind": "book"
+    },
+    {
+      "id": "submission-support",
+      "title": "Submission Support",
+      "path": "/submission-support",
+      "parent": "book-publication",
+      "group": "book-proposal-submission",
+      "overview": true,
+      "kind": "book"
+    },
+    {
+      "id": "revision-support",
+      "title": "Revision Support",
+      "path": "/revision-support",
+      "parent": "book-publication",
+      "group": "book-proposal-submission",
+      "overview": true,
+      "kind": "book"
+    },
+    {
+      "id": "publisher-springer",
+      "title": "Springer",
+      "path": "/publishers/springer",
+      "parent": "journal-publication",
+      "group": "preferred-publishers",
+      "overview": true,
+      "kind": "publisher"
+    },
+    {
+      "id": "publisher-elsevier",
+      "title": "Elsevier",
+      "path": "/publishers/elsevier",
+      "parent": "journal-publication",
+      "group": "preferred-publishers",
+      "overview": true,
+      "kind": "publisher"
+    },
+    {
+      "id": "publisher-wiley",
+      "title": "Wiley",
+      "path": "/publishers/wiley",
+      "parent": "journal-publication",
+      "group": "preferred-publishers",
+      "overview": true,
+      "kind": "publisher"
+    },
+    {
+      "id": "publisher-sage",
+      "title": "SAGE",
+      "path": "/publishers/sage",
+      "parent": "journal-publication",
+      "group": "preferred-publishers",
+      "overview": true,
+      "kind": "publisher"
+    },
+    {
+      "id": "publisher-emerald",
+      "title": "Emerald",
+      "path": "/publishers/emerald",
+      "parent": "journal-publication",
+      "group": "preferred-publishers",
+      "overview": true,
+      "kind": "publisher"
+    },
+    {
+      "id": "publisher-inderscience",
+      "title": "Inderscience",
+      "path": "/publishers/inderscience",
+      "parent": "journal-publication",
+      "group": "preferred-publishers",
+      "overview": true,
+      "kind": "publisher"
+    },
+    {
+      "id": "publisher-asce",
+      "title": "ASCE",
+      "path": "/publishers/asce",
+      "parent": "journal-publication",
+      "group": "preferred-publishers",
+      "overview": true,
+      "kind": "publisher"
+    },
+    {
+      "id": "publisher-acm",
+      "title": "ACM",
+      "path": "/publishers/acm",
+      "parent": "journal-publication",
+      "group": "preferred-publishers",
+      "overview": true,
+      "kind": "publisher"
+    },
+    {
+      "id": "publisher-ieee",
+      "title": "IEEE",
+      "path": "/publishers/ieee",
+      "parent": "journal-publication",
+      "group": "preferred-publishers",
+      "overview": true,
+      "kind": "publisher"
+    },
+    {
+      "id": "publisher-taylor-and-francis",
+      "title": "Taylor & Francis",
+      "path": "/publishers/taylor-and-francis",
+      "parent": "journal-publication",
+      "group": "preferred-publishers",
+      "overview": true,
+      "kind": "publisher"
+    },
+    {
+      "id": "publisher-routledge",
+      "title": "Routledge",
+      "path": "/publishers/routledge",
+      "parent": "journal-publication",
+      "group": "preferred-publishers",
+      "overview": true,
+      "kind": "publisher"
+    },
+    {
+      "id": "publisher-crc-press",
+      "title": "CRC Press",
+      "path": "/publishers/crc-press",
+      "parent": "journal-publication",
+      "group": "preferred-publishers",
+      "overview": true,
+      "kind": "publisher"
+    },
+    {
+      "id": "publisher-igi-global",
+      "title": "IGI Global",
+      "path": "/publishers/igi-global",
+      "parent": "journal-publication",
+      "group": "preferred-publishers",
+      "overview": true,
+      "kind": "publisher"
+    },
+    {
+      "id": "publisher-cambridge-university-press",
+      "title": "Cambridge University Press",
+      "path": "/publishers/cambridge-university-press",
+      "parent": "journal-publication",
+      "group": "preferred-publishers",
+      "overview": true,
+      "kind": "publisher"
+    },
+    {
+      "id": "publisher-oxford-university-press",
+      "title": "Oxford University Press",
+      "path": "/publishers/oxford-university-press",
+      "parent": "journal-publication",
+      "group": "preferred-publishers",
+      "overview": true,
+      "kind": "publisher"
+    },
+    {
+      "id": "publisher-other-reputed-publishers",
+      "title": "Other Reputed Publishers",
+      "path": "/publishers/other-reputed-publishers",
+      "parent": "journal-publication",
+      "group": "preferred-publishers",
+      "overview": true,
+      "kind": "publisher"
+    },
+    {
+      "id": "research-services",
+      "title": "Research Services",
+      "path": "/research-services",
+      "parent": null,
+      "group": "research-services",
+      "overview": true,
+      "kind": "thesis"
+    },
+    {
+      "id": "thesis-services",
+      "title": "Thesis Services",
+      "path": "/thesis-services",
+      "parent": null,
+      "group": "thesis-services",
+      "overview": true,
+      "kind": "thesis"
+    },
+    {
+      "id": "thesis-review",
+      "title": "Thesis Review",
+      "path": "/thesis-review",
+      "parent": "thesis-services",
+      "group": "thesis-services",
+      "overview": true,
+      "kind": "thesis"
+    }
+  ],
+  "menu": [
+    {
+      "key": "home",
+      "label": "Home",
+      "path": "/"
+    },
+    {
+      "key": "research-services",
+      "label": "Research Services",
+      "path": "/research-services",
+      "groups": [
+        {
+          "label": "Research Services",
+          "path": "/research-services",
+          "items": [
+            {
+              "label": "Topic and Research Proposal",
+              "id": "topic-and-research-proposal",
+              "path": "/services/topic-and-research-proposal"
+            },
+            {
+              "label": "Problem Statement",
+              "id": "problem-statement",
+              "path": "/services/problem-statement"
+            },
+            {
+              "label": "Base Papers",
+              "id": "base-papers",
+              "path": "/services/base-papers"
+            },
+            {
+              "label": "Research Design",
+              "id": "research-design",
+              "path": "/research-design"
+            },
+            {
+              "label": "Questionnaire and Experiments",
+              "id": "questionnaire-and-experiments",
+              "path": "/questionnaire-and-experiments"
+            },
+            {
+              "label": "Analysis",
+              "id": "analysis",
+              "path": "/analysis"
+            },
+            {
+              "label": "Qualitative Data Analysis",
+              "id": "qualitative-data-analysis",
+              "path": "/qualitative-data-analysis"
+            },
+            {
+              "label": "Quantitative Data Analysis",
+              "id": "quantitative-data-analysis",
+              "path": "/quantitative-data-analysis"
+            },
+            {
+              "label": "PhD Admission Assistance",
+              "id": "phd-admission-assistance",
+              "path": "/services/phd-admission-assistance"
+            },
+            {
+              "label": "PhD – Embarking the Journey",
+              "id": "phd-embarking-the-journey",
+              "path": "/services/phd-embarking-the-journey"
+            },
+            {
+              "label": "Fast-Track PhD by Research Publication",
+              "id": "fast-track-phd-by-research-publication",
+              "path": "/services/fast-track-phd-by-research-publication"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "journal-publication",
+      "label": "Journal Publication",
+      "path": "/journal-publication",
+      "mega": "journal",
+      "featured": [
+        {
+          "label": "Journal Papers",
+          "id": "journal-papers",
+          "path": "/journal-papers"
+        },
+        {
+          "label": "Review Article",
+          "id": "review-article",
+          "path": "/review-article"
+        },
+        {
+          "label": "Empirical Article",
+          "id": "empirical-article",
+          "path": "/empirical-article"
+        },
+        {
+          "label": "IEEE / Scopus Paper Support",
+          "id": "ieee-papers",
+          "path": "/ieee-papers"
+        },
+        {
+          "label": "Researcher Profile Enhancement",
+          "id": "researcher-profile-enhancement",
+          "path": "/researcher-profile-enhancement"
+        }
+      ],
+      "groups": [
+        {
+          "label": "Scopus Indexed Journals",
+          "path": "/scopus-indexed-journals",
+          "items": [
+            {
+              "label": "Q1 Journals",
+              "id": "q1-journals",
+              "path": "/q1-journals"
+            },
+            {
+              "label": "Q2 Journals",
+              "id": "q2-journals",
+              "path": "/q2-journals"
+            },
+            {
+              "label": "Q3 Journals",
+              "id": "q3-journals",
+              "path": "/q3-journals"
+            },
+            {
+              "label": "Q4 Journals",
+              "id": "q4-journals",
+              "path": "/q4-journals"
+            }
+          ]
+        },
+        {
+          "label": "Web of Science (WoS) Journals",
+          "path": "/web-of-science-journals",
+          "items": [
+            {
+              "label": "SCIE Journals",
+              "id": "scie-journals",
+              "path": "/scie-journals"
+            },
+            {
+              "label": "SSCI Journals",
+              "id": "ssci-journals",
+              "path": "/ssci-journals"
+            },
+            {
+              "label": "AHCI Journals",
+              "id": "ahci-journals",
+              "path": "/ahci-journals"
+            },
+            {
+              "label": "ESCI Journals",
+              "id": "esci-journals",
+              "path": "/esci-journals"
+            }
+          ]
+        },
+        {
+          "label": "Peer-Reviewed Journals",
+          "path": "/peer-reviewed-journals",
+          "items": [
+            {
+              "label": "National Peer-Reviewed Journals",
+              "id": "national-peer-reviewed-journals",
+              "path": "/national-peer-reviewed-journals"
+            },
+            {
+              "label": "International Peer-Reviewed Journals",
+              "id": "international-peer-reviewed-journals",
+              "path": "/international-peer-reviewed-journals"
+            }
+          ]
+        },
+        {
+          "label": "Government / Recognized Journals",
+          "path": "/government-recognized-journals",
+          "items": [
+            {
+              "label": "Government / Recognized Journals",
+              "id": "government-recognized-journals",
+              "path": "/government-recognized-journals"
+            }
+          ]
+        },
+        {
+          "label": "Preferred Publishers",
+          "items": [
+            {
+              "label": "Springer",
+              "id": "publisher-springer",
+              "path": "/publishers/springer"
+            },
+            {
+              "label": "Elsevier",
+              "id": "publisher-elsevier",
+              "path": "/publishers/elsevier"
+            },
+            {
+              "label": "Wiley",
+              "id": "publisher-wiley",
+              "path": "/publishers/wiley"
+            },
+            {
+              "label": "SAGE",
+              "id": "publisher-sage",
+              "path": "/publishers/sage"
+            },
+            {
+              "label": "Emerald",
+              "id": "publisher-emerald",
+              "path": "/publishers/emerald"
+            },
+            {
+              "label": "Inderscience",
+              "id": "publisher-inderscience",
+              "path": "/publishers/inderscience"
+            },
+            {
+              "label": "ASCE",
+              "id": "publisher-asce",
+              "path": "/publishers/asce"
+            },
+            {
+              "label": "ACM",
+              "id": "publisher-acm",
+              "path": "/publishers/acm"
+            },
+            {
+              "label": "IEEE",
+              "id": "publisher-ieee",
+              "path": "/publishers/ieee"
+            },
+            {
+              "label": "Taylor & Francis",
+              "id": "publisher-taylor-and-francis",
+              "path": "/publishers/taylor-and-francis"
+            },
+            {
+              "label": "Other Reputed Publishers",
+              "id": "publisher-other-reputed-publishers",
+              "path": "/publishers/other-reputed-publishers"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "book-publication",
+      "label": "Book Publication",
+      "path": "/book-publication",
+      "mega": "book",
+      "featured": [
+        {
+          "label": "PhD Thesis to Book Publication",
+          "id": "phd-thesis-to-book-publication",
+          "path": "/phd-thesis-to-book-publication"
+        }
+      ],
+      "groups": [
+        {
+          "label": "Book Chapter Publication",
+          "path": "/book-chapter-publication",
+          "items": [
+            {
+              "label": "Scopus Indexed Book Chapters",
+              "id": "scopus-indexed-book-chapters",
+              "path": "/scopus-indexed-book-chapters"
+            },
+            {
+              "label": "Web of Science Indexed Book Chapters",
+              "id": "web-of-science-indexed-book-chapters",
+              "path": "/web-of-science-indexed-book-chapters"
+            },
+            {
+              "label": "Peer-Reviewed Book Chapters",
+              "id": "peer-reviewed-book-chapters",
+              "path": "/peer-reviewed-book-chapters"
+            },
+            {
+              "label": "Edited Book Chapters",
+              "id": "edited-book-chapters",
+              "path": "/edited-book-chapters"
+            }
+          ]
+        },
+        {
+          "label": "Full Book Publication",
+          "path": "/full-book-publication",
+          "items": [
+            {
+              "label": "Textbooks",
+              "id": "textbooks",
+              "path": "/textbooks"
+            },
+            {
+              "label": "Reference Books",
+              "id": "reference-books",
+              "path": "/reference-books"
+            },
+            {
+              "label": "Research Monographs",
+              "id": "research-monographs",
+              "path": "/research-monographs"
+            },
+            {
+              "label": "Edited Books",
+              "id": "edited-books",
+              "path": "/edited-books"
+            },
+            {
+              "label": "Conference Proceedings",
+              "id": "conference-proceedings",
+              "path": "/conference-proceedings"
+            }
+          ]
+        },
+        {
+          "label": "International Publishers",
+          "items": [
+            {
+              "label": "Springer",
+              "id": "publisher-springer",
+              "path": "/publishers/springer"
+            },
+            {
+              "label": "Elsevier",
+              "id": "publisher-elsevier",
+              "path": "/publishers/elsevier"
+            },
+            {
+              "label": "Wiley",
+              "id": "publisher-wiley",
+              "path": "/publishers/wiley"
+            },
+            {
+              "label": "Taylor & Francis",
+              "id": "publisher-taylor-and-francis",
+              "path": "/publishers/taylor-and-francis"
+            },
+            {
+              "label": "Routledge",
+              "id": "publisher-routledge",
+              "path": "/publishers/routledge"
+            },
+            {
+              "label": "SAGE",
+              "id": "publisher-sage",
+              "path": "/publishers/sage"
+            },
+            {
+              "label": "Emerald",
+              "id": "publisher-emerald",
+              "path": "/publishers/emerald"
+            },
+            {
+              "label": "CRC Press",
+              "id": "publisher-crc-press",
+              "path": "/publishers/crc-press"
+            },
+            {
+              "label": "IGI Global",
+              "id": "publisher-igi-global",
+              "path": "/publishers/igi-global"
+            },
+            {
+              "label": "Cambridge University Press",
+              "id": "publisher-cambridge-university-press",
+              "path": "/publishers/cambridge-university-press"
+            },
+            {
+              "label": "Oxford University Press",
+              "id": "publisher-oxford-university-press",
+              "path": "/publishers/oxford-university-press"
+            },
+            {
+              "label": "Other Reputed Publishers",
+              "id": "publisher-other-reputed-publishers",
+              "path": "/publishers/other-reputed-publishers"
+            }
+          ]
+        },
+        {
+          "label": "ISBN Publication",
+          "path": "/isbn-publication",
+          "items": [
+            {
+              "label": "National ISBN Books",
+              "id": "national-isbn-books",
+              "path": "/national-isbn-books"
+            },
+            {
+              "label": "International ISBN Books",
+              "id": "international-isbn-books",
+              "path": "/international-isbn-books"
+            },
+            {
+              "label": "ISBN Book Chapters / Edited Volumes",
+              "id": "isbn-book-chapters",
+              "path": "/isbn-book-chapters"
+            }
+          ]
+        },
+        {
+          "label": "Book Editing Services",
+          "path": "/book-editing-services",
+          "items": [
+            {
+              "label": "Proposal Preparation",
+              "id": "proposal-preparation",
+              "path": "/proposal-preparation"
+            },
+            {
+              "label": "Chapter Structuring",
+              "id": "chapter-structuring",
+              "path": "/chapter-structuring"
+            },
+            {
+              "label": "Language Editing",
+              "id": "language-editing",
+              "path": "/language-editing"
+            },
+            {
+              "label": "Formatting",
+              "id": "formatting",
+              "path": "/formatting"
+            },
+            {
+              "label": "Reference Formatting",
+              "id": "reference-formatting",
+              "path": "/reference-formatting"
+            },
+            {
+              "label": "Plagiarism / Similarity Review",
+              "id": "similarity-review",
+              "path": "/similarity-review"
+            }
+          ]
+        },
+        {
+          "label": "Book Proposal & Submission",
+          "path": "/book-proposal-submission",
+          "items": [
+            {
+              "label": "Publisher Selection",
+              "id": "publisher-selection",
+              "path": "/publishers/selection"
+            },
+            {
+              "label": "Book Proposal Development",
+              "id": "book-proposal-development",
+              "path": "/book-proposal-development"
+            },
+            {
+              "label": "Manuscript Preparation",
+              "id": "manuscript-preparation",
+              "path": "/manuscript-preparation"
+            },
+            {
+              "label": "Submission Support",
+              "id": "submission-support",
+              "path": "/submission-support"
+            },
+            {
+              "label": "Revision Support",
+              "id": "revision-support",
+              "path": "/revision-support"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "thesis-services",
+      "label": "Thesis Services",
+      "path": "/thesis-services",
+      "groups": [
+        {
+          "label": "Thesis Services",
+          "path": "/thesis-services",
+          "items": [
+            {
+              "label": "Chapters Writing",
+              "id": "chapters-writing",
+              "path": "/chapters-writing"
+            },
+            {
+              "label": "Development Editing",
+              "id": "development-editing",
+              "path": "/development-editing"
+            },
+            {
+              "label": "Editing",
+              "id": "editing",
+              "path": "/editing"
+            },
+            {
+              "label": "Formatting",
+              "id": "formatting",
+              "path": "/formatting"
+            },
+            {
+              "label": "Research Design",
+              "id": "research-design",
+              "path": "/research-design"
+            },
+            {
+              "label": "Questionnaire and Experiments",
+              "id": "questionnaire-and-experiments",
+              "path": "/questionnaire-and-experiments"
+            },
+            {
+              "label": "Thesis Review",
+              "id": "thesis-review",
+              "path": "/thesis-review"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "other-services",
+      "label": "Other Services",
+      "path": "/other-services",
+      "groups": [
+        {
+          "label": "Other Services",
+          "path": "/other-services",
+          "items": [
+            {
+              "label": "Implementation",
+              "id": "implementation",
+              "path": "/implementation"
+            },
+            {
+              "label": "MATLAB Projects",
+              "id": "matlab-projects",
+              "path": "/services/matlab-projects"
+            },
+            {
+              "label": "Simulink Projects",
+              "id": "simulink-projects",
+              "path": "/services/simulink-projects"
+            },
+            {
+              "label": "Python Projects",
+              "id": "python-projects",
+              "path": "/services/python-projects"
+            },
+            {
+              "label": "Java Projects",
+              "id": "java-projects",
+              "path": "/services/java-projects"
+            },
+            {
+              "label": "ANSYS Projects",
+              "id": "ansys-projects",
+              "path": "/services/ansys-projects"
+            },
+            {
+              "label": "Technical Article",
+              "id": "technical-article",
+              "path": "/technical-article"
+            },
+            {
+              "label": "Humanise AI Academic Content",
+              "id": "humanise-ai-academic-content",
+              "path": "/humanise-ai-academic-content"
+            },
+            {
+              "label": "Thought Clearing",
+              "id": "thought-clearing",
+              "path": "/thought-clearing"
+            },
+            {
+              "label": "Patent Support and Consulting",
+              "id": "patent-support-and-consulting",
+              "path": "/services/patent-support-and-consulting"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "contact",
+      "label": "Contact",
+      "path": "/contact"
+    }
+  ],
+  "wordCounts": {
+    "where-to-start": 444,
+    "moving-along": 402,
+    "implementation": 930,
+    "analysis": 838,
+    "qualitative-data-analysis": 876,
+    "quantitative-data-analysis": 864,
+    "other-services": 420,
+    "chapters-writing": 896,
+    "questionnaire-and-experiments": 874,
+    "humanise-ai-academic-content": 874,
+    "finishing-up": 412,
+    "editing": 887,
+    "formatting": 875,
+    "also-do-this": 431,
+    "journal-papers": 908,
+    "review-article": 917,
+    "empirical-article": 905,
+    "technical-article": 916,
+    "publication-services": 420,
+    "ieee-papers": 908,
+    "researcher-profile-enhancement": 929,
+    "phd-thesis-to-book-publication": 936,
+    "phd-guide": 419,
+    "thought-clearing": 920,
+    "development-editing": 909,
+    "research-design": 928,
+    "journal-publication": 395,
+    "scopus-indexed-journals": 398,
+    "q1-journals": 395,
+    "q2-journals": 395,
+    "q3-journals": 395,
+    "q4-journals": 395,
+    "web-of-science-journals": 404,
+    "scie-journals": 395,
+    "ssci-journals": 395,
+    "ahci-journals": 395,
+    "esci-journals": 395,
+    "peer-reviewed-journals": 395,
+    "national-peer-reviewed-journals": 398,
+    "international-peer-reviewed-journals": 398,
+    "government-recognized-journals": 401,
+    "preferred-publishers": 395,
+    "book-publication": 392,
+    "book-chapter-publication": 395,
+    "scopus-indexed-book-chapters": 398,
+    "web-of-science-indexed-book-chapters": 404,
+    "peer-reviewed-book-chapters": 395,
+    "edited-book-chapters": 395,
+    "full-book-publication": 395,
+    "textbooks": 389,
+    "reference-books": 392,
+    "research-monographs": 392,
+    "edited-books": 392,
+    "conference-proceedings": 392,
+    "isbn-publication": 392,
+    "national-isbn-books": 395,
+    "international-isbn-books": 395,
+    "isbn-book-chapters": 404,
+    "book-editing-services": 395,
+    "proposal-preparation": 392,
+    "chapter-structuring": 392,
+    "language-editing": 392,
+    "reference-formatting": 392,
+    "similarity-review": 398,
+    "book-proposal-submission": 398,
+    "publisher-selection": 392,
+    "book-proposal-development": 395,
+    "manuscript-preparation": 392,
+    "submission-support": 392,
+    "revision-support": 392,
+    "publisher-springer": 388,
+    "publisher-elsevier": 388,
+    "publisher-wiley": 388,
+    "publisher-sage": 388,
+    "publisher-emerald": 388,
+    "publisher-inderscience": 388,
+    "publisher-asce": 388,
+    "publisher-acm": 388,
+    "publisher-ieee": 388,
+    "publisher-taylor-and-francis": 394,
+    "publisher-routledge": 388,
+    "publisher-crc-press": 391,
+    "publisher-igi-global": 391,
+    "publisher-cambridge-university-press": 394,
+    "publisher-oxford-university-press": 394,
+    "publisher-other-reputed-publishers": 394,
+    "research-services": 379,
+    "thesis-services": 379,
+    "thesis-review": 379
+  }
+}
